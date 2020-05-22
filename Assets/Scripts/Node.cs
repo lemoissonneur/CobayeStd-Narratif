@@ -108,6 +108,7 @@ public class Node
         panelRectTCp.anchorMin = panelRectTCp.anchorMax = new Vector2(0, 1);
         panelRectTCp.pivot = new Vector2(0, 1);
         panelRectTCp.anchoredPosition = new Vector2(0, 0);
+        panelRectTCp.localScale = Vector3.one;
 
         // setup text
         textRectTCp.anchorMin = new Vector2(0, 0);

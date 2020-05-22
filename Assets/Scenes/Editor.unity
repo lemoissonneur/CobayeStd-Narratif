@@ -464,8 +464,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: NewTextNodeBtn
+      - m_Target: {fileID: 1493904675}
+        m_MethodName: OnNewNode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1027,6 +1027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeba242f3f5bc5f44b6d37f2a3a8347d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ColorPickerPrefab: {fileID: 1000010175529674, guid: f24822f355d009d409e4bfb5c585f135,
+    type: 3}
+  TargetCamera: {fileID: 1173571422}
 --- !u!1 &156447846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,7 +2340,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 483722685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1493904675}
+        m_MethodName: OnDeleteNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &483722685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3291,8 +3305,8 @@ Canvas:
   m_GameObject: {fileID: 576717368}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1173571424}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3551,7 +3565,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 611569998}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1493904675}
+        m_MethodName: SaveTreeToFile
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &611569998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6350,6 +6375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57954f3dd14e60c459fa46f3b32ed080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NodeInfoGObj: {fileID: 0}
 --- !u!1 &1558084560
 GameObject:
   m_ObjectHideFlags: 0

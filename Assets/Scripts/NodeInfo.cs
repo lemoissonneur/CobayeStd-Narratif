@@ -159,7 +159,9 @@ public class NodeInfo : MonoBehaviour
     private void StartPaint(Color targetColor)
     {
         ColorPickerGobj = (GameObject)Instantiate(ColorPickerPrefab, Vector3.zero, Quaternion.identity);
+        ColorPickerGobj.layer = 8;
         ColorPickerGobj.transform.LookAt(TargetCamera.transform);
+        ColorPickerGobj.transform.position = new Vector3(2.5f, -3, -1);
         ColorPickerCp = ColorPickerGobj.GetComponent<ColorPickerTriangle>();
         ColorPickerCp.SetScale(3);
         ColorPickerCp.SetNewColor(targetColor);

@@ -71,7 +71,7 @@ public class TreeInfo : MonoBehaviour
         NodeInfoGObj.LoadNode(primaleNode);
     }
 
-    private void SaveTreeToFile()
+    public void SaveTreeToFile()
     {
         fileStreamWriter = new StreamWriter(scenariosFilesList[currentScenarioIndex], false);
 
@@ -135,6 +135,48 @@ public class TreeInfo : MonoBehaviour
         GameObject.Find("TreeStatusData").GetComponent<Text>().text = status;
         GameObject.Find("TreeSizeData").GetComponent<Text>().text = nodesList.Count.ToString();
         GameObject.Find("TreeFileNameData").GetComponent<Text>().text = GameObject.Find("TreeLoaderDropdown").GetComponent<Dropdown>().options[currentScenarioIndex].text;
+    }
+
+    public void OnNewNode()
+    {
+        Node node = new Node((uint)nodesList.Count);
+        if(NodeInfoGObj.CurrentNode != null)
+        {
+            node.data.format = NodeInfoGObj.CurrentNode.data.format;
+            node.data.previousNodeId.Add(NodeInfoGObj.CurrentNode.data.id);
+            node.data.format = NodeInfoGObj.CurrentNode.data.format;
+            NodeInfoGObj.CurrentNode.data.nextNodesId.Add(node.data.id);
+            nodesList.Add(node);
+        }
+
+        BuildTree();
+    }
+
+    public void OnDeleteNode()
+    {
+        if (NodeInfoGObj.CurrentNode != null)
+        {
+            // get first father Id (we will jump to it after delete
+            int nodeToJmpId = (int)NodeInfoGObj.CurrentNode.data.previousNodeId[0];
+
+            // remove the current node ref in fathers nodes
+            foreach (int fatherId in NodeInfoGObj.CurrentNode.data.previousNodeId)
+                nodesList[fatherId].data.nextNodesId.Remove(NodeInfoGObj.CurrentNode.data.id);
+
+            // remove the current node ref in childs nodes
+            foreach (int childId in NodeInfoGObj.CurrentNode.data.nextNodesId)
+            {
+                nodesList[childId].data.previousNodeId.Remove(NodeInfoGObj.CurrentNode.data.id);
+                if (nodesList[childId].data.previousNodeId.Count < 1)
+                    Debug.LogError("WARNING ! node "+childId+" will become fatherless !!! ");
+            }
+
+            nodesList.Remove(NodeInfoGObj.CurrentNode);
+
+            BuildTree();
+
+            NodeInfoGObj.LoadNode(nodesList[nodeToJmpId]);
+        }
     }
 
     // Tree Navigation
