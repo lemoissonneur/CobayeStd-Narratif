@@ -4,13 +4,15 @@ using UnityEngine.UI;
 
 public class NodeInfo : MonoBehaviour
 {
-    private Node CurrentNode { get; set; }
+    public Node CurrentNode = null;
+    private GameObject EditPanel;
 
     [SerializeField]
-    private readonly GameObject ColorPickerPrefab = null;
+    private GameObject ColorPickerPrefab = null;
     [SerializeField]
-    private readonly GameObject TargetCamera = null;
+    private GameObject TargetCamera = null;
 
+    // color
     private GameObject ColorPickerGobj;
     private ColorPickerTriangle ColorPickerCp;
     private bool IsPainting = false;
@@ -19,7 +21,7 @@ public class NodeInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        EditPanel = GameObject.Find("EditPanel");
     }
 
     // Update is called once per frame
@@ -31,10 +33,46 @@ public class NodeInfo : MonoBehaviour
 
     public void LoadNode(Node newNode)
     {
+        // delete current nodes display
+        if (CurrentNode != null)
+        {
+            CurrentNode.isEditable = false;
+            CurrentNode.DestroyGObj();
+            foreach (Node father in CurrentNode.FatherNode)
+                father.DestroyGObj();
+            foreach (Node child in CurrentNode.ChildsNodes)
+                child.DestroyGObj();
+        }
+
+        // get new node
         CurrentNode = newNode;
+
+        // create Go
+        CurrentNode.isEditable = true;
+        CurrentNode.CreateGObj(EditPanel, new Vector2(0,345), new Vector2(1380, 330));
+
+        int FatherX = CurrentNode.FatherNode.Count > 0 ? 1380 / CurrentNode.FatherNode.Count : 1380;
+        int FatherCpt = 0;
+        foreach (Node father in CurrentNode.FatherNode)
+        {
+            father.CreateGObj(EditPanel, new Vector2(FatherCpt*FatherX, 0), new Vector2(FatherX,330));
+            FatherCpt++;
+        }
+
+        int ChildX = CurrentNode.ChildsNodes.Count > 0 ? 1380 / CurrentNode.ChildsNodes.Count : 1380;
+        int ChildCpt = 0;
+        foreach (Node child in CurrentNode.ChildsNodes)
+        {
+            child.CreateGObj(EditPanel, new Vector2(ChildCpt * ChildX, 690), new Vector2(ChildX, 330));
+            ChildCpt++;
+        }
+
+
+        // update panel
+        UpdateNodeInfoDisplay();
     }
 
-    private void DisplayNodeInfo()
+    private void UpdateNodeInfoDisplay()
     {
         GameObject.Find("NodeIdData").GetComponent<Text>().text = CurrentNode.data.id.ToString();
         GameObject.Find("NodeParentData").GetComponent<Text>().text = CurrentNode.data.previousNodeId.ToString();

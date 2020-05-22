@@ -13,7 +13,7 @@ public class Node
     {
         public uint id;
         public string text;
-        public uint previousNodeId;
+        public List<uint> previousNodeId;
         public List<uint> nextNodesId;
         public NodeType type;
         public TextFormatSettings format;
@@ -45,11 +45,11 @@ public class Node
     // FIELDS :
     public bool isEditable = false;
     public NodeDataStorage data;
-    public Node previousNode = null;
+    public List<Node> FatherNode = new List<Node>();
     public List<Node> ChildsNodes = new List<Node>();
 
     // GameObjects & components
-    private GameObject parentGObj;
+    private GameObject parentGObj = null;
 
     private GameObject panelGObj;
     private RectTransform panelRectTCp;
@@ -65,17 +65,15 @@ public class Node
 
 
     // create new empty node
-    public Node(GameObject parent, uint newid, bool editmode = false)
+    public Node(uint newid, bool editmode = false)
     {
-        parentGObj = parent;
-
         isEditable = editmode;
 
         data = new NodeDataStorage()
         {
             id = newid,
             text = "empty",
-            previousNodeId = 0,
+            previousNodeId = new List<uint>(),
             nextNodesId = new List<uint>(),
             type = NodeType.TEXT,
             format = Node.defaultTextFormat
@@ -83,15 +81,15 @@ public class Node
     }
 
     // create from data
-    public Node(GameObject parent, NodeDataStorage newdata)
+    public Node(NodeDataStorage newdata)
     {
-        parentGObj = parent;
-
         data = newdata;
     }
 
-    public void CreateGObj()
+    public void CreateGObj(GameObject parent, Vector2 position = new Vector2(), Vector2 size = new Vector2())
     {
+        parentGObj = parent;
+
         // create panel GameOBject
         panelGObj = new GameObject("Node: " + data.id.ToString() + " panel");
         panelGObj.transform.SetParent(parentGObj.transform);
@@ -123,9 +121,34 @@ public class Node
         {
             textInputCp = textGObj.AddComponent<InputField>();
             textInputCp.textComponent = textCp;
+            textInputCp.text = data.text;
             textInputCp.lineType = InputField.LineType.MultiLineNewline;
             textCp.supportRichText = false;
         }
+
+        panelRectTCp.offsetMin = new Vector2(position.x, -position.y - size.y);
+        panelRectTCp.offsetMax = new Vector2(position.x + size.x, -position.y);
+
+        //SetSize(size);
+        //SetPosition(position);
+    }
+
+    public void DestroyGObj()
+    {
+        GameObject.Destroy(panelGObj);
+        GameObject.Destroy(textGObj);
+        parentGObj = null;
+    }
+
+    public void SetPosition(Vector2 position)
+    {
+        panelRectTCp.offsetMin = new Vector2(position.x, -position.y - panelRectTCp.sizeDelta.y);
+        panelRectTCp.offsetMax = new Vector2(position.x + panelRectTCp.sizeDelta.x, -position.y);
+    }
+
+    public void SetSize(Vector2 size)
+    {
+        panelRectTCp.sizeDelta = size;
     }
 
     public Vector2 AdjustSize(float Xmax)
@@ -168,5 +191,26 @@ public class Node
     private Font GetFont(string font)
     {
         return Resources.GetBuiltinResource<Font>(font);
+    }
+
+    public void GetChildsInList(List<Node> list)
+    {
+        foreach(Node n in list)
+        {
+            if(data.nextNodesId.Contains(n.data.id)) // if this node is a child
+            {
+                ChildsNodes.Add(n);
+            }
+
+            if (data.previousNodeId.Contains(n.data.id))
+            {
+                FatherNode.Add(n);
+            }
+        }
+
+        foreach(Node n in ChildsNodes)
+        {
+            n.GetChildsInList(list);
+        }
     }
 }
