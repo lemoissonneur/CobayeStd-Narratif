@@ -125,6 +125,7 @@ public class Node
             textInputCp.text = data.text;
             textInputCp.lineType = InputField.LineType.MultiLineNewline;
             textCp.supportRichText = false;
+            textInputCp.onValueChanged.AddListener(EditText);
         }
 
         panelRectTCp.offsetMin = new Vector2(position.x, -position.y - size.y);
@@ -213,5 +214,10 @@ public class Node
         {
             n.GetChildsInList(list);
         }
+    }
+
+    public void EditText(string text)
+    {
+        data.text = text;
     }
 }

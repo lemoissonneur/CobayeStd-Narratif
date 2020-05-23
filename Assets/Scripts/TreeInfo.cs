@@ -91,10 +91,11 @@ public class TreeInfo : MonoBehaviour
         foreach(Node n in nodesList)
         {
             if (n.data.id == 0)
-            {
                 primaleNode = n;
-                break;
-            }
+
+            // break the tree before rebuilding it
+            n.FatherNode = new List<Node>();
+            n.ChildsNodes = new List<Node>();
         }
 
         primaleNode.GetChildsInList(nodesList);
@@ -146,10 +147,13 @@ public class TreeInfo : MonoBehaviour
             node.data.previousNodeId.Add(NodeInfoGObj.CurrentNode.data.id);
             node.data.format = NodeInfoGObj.CurrentNode.data.format;
             NodeInfoGObj.CurrentNode.data.nextNodesId.Add(node.data.id);
-            nodesList.Add(node);
         }
 
+        nodesList.Add(node);
+
         BuildTree();
+
+        NodeInfoGObj.LoadNode(node);
     }
 
     public void OnDeleteNode()
@@ -157,25 +161,27 @@ public class TreeInfo : MonoBehaviour
         if (NodeInfoGObj.CurrentNode != null)
         {
             // get first father Id (we will jump to it after delete
-            int nodeToJmpId = (int)NodeInfoGObj.CurrentNode.data.previousNodeId[0];
+            Node nodeToJmp = NodeInfoGObj.CurrentNode.FatherNode[0];
 
-            // remove the current node ref in fathers nodes
-            foreach (int fatherId in NodeInfoGObj.CurrentNode.data.previousNodeId)
-                nodesList[fatherId].data.nextNodesId.Remove(NodeInfoGObj.CurrentNode.data.id);
-
-            // remove the current node ref in childs nodes
-            foreach (int childId in NodeInfoGObj.CurrentNode.data.nextNodesId)
+            // remove the current node ref in fathers & childs nodes
+            foreach (Node n in nodesList)
             {
-                nodesList[childId].data.previousNodeId.Remove(NodeInfoGObj.CurrentNode.data.id);
-                if (nodesList[childId].data.previousNodeId.Count < 1)
-                    Debug.LogError("WARNING ! node "+childId+" will become fatherless !!! ");
+                if (NodeInfoGObj.CurrentNode.data.previousNodeId.Contains(n.data.id))   // this node is a father
+                    n.data.nextNodesId.Remove(NodeInfoGObj.CurrentNode.data.id);
+
+                if (NodeInfoGObj.CurrentNode.data.nextNodesId.Contains(n.data.id))    // this node is a child
+                {
+                    n.data.previousNodeId.Remove(NodeInfoGObj.CurrentNode.data.id);
+                    if (n.data.previousNodeId.Count < 1)
+                        Debug.LogError("WARNING ! node " + n.data.id + " will become fatherless !!! ");
+                }
             }
 
             nodesList.Remove(NodeInfoGObj.CurrentNode);
 
             BuildTree();
 
-            NodeInfoGObj.LoadNode(nodesList[nodeToJmpId]);
+            NodeInfoGObj.LoadNode(nodeToJmp);
         }
     }
 

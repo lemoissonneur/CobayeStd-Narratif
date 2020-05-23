@@ -1,0 +1,3 @@
+{"id":0,"text":"node 0","previousNodeId":[],"nextNodesId":[1,2],"type":1,"format":{"fontName":"Arial.ttf","size":14,"textColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"backColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"style":0}}
+{"id":1,"text":"node 1 AHAH","previousNodeId":[0],"nextNodesId":[],"type":1,"format":{"fontName":"Arial.ttf","size":14,"textColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"backColor":{"r":0.7958321571350098,"g":0.036966703832149509,"b":0.036966703832149509,"a":1.0},"style":0}}
+{"id":2,"text":"node 2","previousNodeId":[0],"nextNodesId":[],"type":1,"format":{"fontName":"Arial.ttf","size":14,"textColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"backColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"style":0}}
