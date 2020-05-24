@@ -21,8 +21,6 @@ MonoBehaviour:
     est dolor, eget venenatis velit auctor sed. Etiam sed rutrum justo. Etiam molestie
     hendrerit lobortis. Vestibulum non rhoncus purus. Ut sem magna, laoreet a risus
     et, porttitor egestas ligula. Duis et odio a enim ullamcorper commodo. '
-  playerChoices:
-  - text: Choice 1
-    valueNode: {fileID: 0}
-  - text: Choice 2
-    valueNode: {fileID: 0}
+  exits:
+  - text: Toto
+    valueNode: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

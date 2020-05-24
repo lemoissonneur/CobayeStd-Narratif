@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerChoice
+public class Exit
 {
     public string text;
-    public ScenarioNode valueNode;
+    public Room valueNode;
 }

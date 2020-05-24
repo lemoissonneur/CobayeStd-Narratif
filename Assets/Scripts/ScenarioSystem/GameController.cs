@@ -3,27 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(ScenarioNodeNavigation))]
+[RequireComponent(typeof(RoomNavigation))]
 public class GameController : MonoBehaviour
 {
     public Text displayText;
 
     [HideInInspector]
-    public ScenarioNodeNavigation scenarioNavigation;
+    public RoomNavigation roomNavigation;
     [HideInInspector]
-    public List<string> playerChoicesInScenarioNode = new List<string>();
+    public List<string> exitsInRoom = new List<string>();
 
     private List<string> actionLog = new List<string>();
 
     private void Awake()
     {
-        scenarioNavigation = GetComponent<ScenarioNodeNavigation>();
-        scenarioNavigation.UnpackPlayerChoicesInScenarioNode();
+        roomNavigation = GetComponent<RoomNavigation>();
     }
 
     private void Start()
     {
-        DisplayScenarioNodeText();
+        DisplayRoomText();
         DisplayLoggedText();
     }
 
@@ -33,16 +32,18 @@ public class GameController : MonoBehaviour
         displayText.text = logAsText;
     }
 
-    public void DisplayScenarioNodeText()
+    public void DisplayRoomText()
     {
-        string combinedText = scenarioNavigation.currentNode.text + "\n";
+        roomNavigation.UnpackExitsInRoom();
+
+        string combinedText = roomNavigation.currentNode.text + "\n";
 
         LogStringWithReturn(combinedText);
     }
 
     public void DisplayPlayerChoices()
     {           
-        string joinedPlayerChoices = string.Join("\n", playerChoicesInScenarioNode.ToArray());
+        string joinedPlayerChoices = string.Join("\n", exitsInRoom.ToArray());
     }
 
     public void LogStringWithReturn(string stringToAdd)
