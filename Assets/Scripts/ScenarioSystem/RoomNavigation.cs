@@ -22,4 +22,23 @@ public class RoomNavigation : MonoBehaviour
             controller.interactionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
         }
     }
+
+    public void AttemptToChangeRooms(string directionNoun) 
+    {
+        if(exitDictionnary.ContainsKey(directionNoun))
+        {
+            currentRoom = exitDictionnary[directionNoun];
+            controller.LogStringWithReturn("You head off to the " + directionNoun);
+            controller.DisplayRoomText();
+        }
+        else
+        {
+            controller.LogStringWithReturn("There is no path to the " + directionNoun);
+        }
+    }
+
+    public void ClearExits()
+    {
+        exitDictionnary.Clear();
+    }
 }

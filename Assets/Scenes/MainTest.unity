@@ -618,8 +618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 1776789439}
+  inputActions:
+  - {fileID: 11400000, guid: 33e2f01c8e5eb4b49b2eebfefd443b03, type: 2}
   roomNavigation: {fileID: 0}
-  exitsInRoom: []
+  interactionDescriptionsInRoom: []
 --- !u!4 &1445047897
 Transform:
   m_ObjectHideFlags: 0
@@ -646,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783d2de281caf1a459e2f5285e94af44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentNode: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
+  currentRoom: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
 --- !u!114 &1445047899
 MonoBehaviour:
   m_ObjectHideFlags: 0
