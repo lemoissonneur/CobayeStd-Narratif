@@ -5,4 +5,5 @@ public class ScenarioNode : ScriptableObject
 {
     [TextArea]
     public string text;
+    public PlayerChoice[] playerChoices;
 }

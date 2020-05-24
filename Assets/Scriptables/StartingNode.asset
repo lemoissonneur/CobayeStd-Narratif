@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
-  m_Name: ScenarioNode
+  m_Name: StartingNode
   m_EditorClassIdentifier: 
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien mauris,
     mollis eu molestie sit amet, aliquet sit amet mauris. Pellentesque semper vulputate
@@ -21,3 +21,8 @@ MonoBehaviour:
     est dolor, eget venenatis velit auctor sed. Etiam sed rutrum justo. Etiam molestie
     hendrerit lobortis. Vestibulum non rhoncus purus. Ut sem magna, laoreet a risus
     et, porttitor egestas ligula. Duis et odio a enim ullamcorper commodo. '
+  playerChoices:
+  - text: Choice 1
+    valueNode: {fileID: 0}
+  - text: Choice 2
+    valueNode: {fileID: 0}
