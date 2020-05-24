@@ -6,6 +6,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(RoomNavigation))]
 public class GameController : MonoBehaviour
 {
+    private static GameController _instance;
+    public static GameController Instance { get { return _instance; } }
+
     public Text displayText;
     public InputAction[] inputActions;        
 
@@ -18,6 +21,14 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
+        if(_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
         roomNavigation = GetComponent<RoomNavigation>();
     }
 
@@ -27,36 +38,27 @@ public class GameController : MonoBehaviour
         DisplayLoggedText();
     }
 
-    public void DisplayLoggedText()
-    {
-        string logAsText = string.Join("\n", actionLog.ToArray());
-        displayText.text = logAsText;
-    }
-
     public void DisplayRoomText()
     {
-        ClearCollectionsForNewRoom();
+        // Clear collections for new room
+        interactionDescriptionsInRoom.Clear();
+        roomNavigation.ClearExits();
 
+        // Display room text
         roomNavigation.UnpackExitsInRoom();
-
         string combinedText = roomNavigation.currentRoom.description + "\n";
-
         LogStringWithReturn(combinedText);
     }
 
-    public void DisplayPlayerChoices()
-    {           
-        string joinedPlayerChoices = string.Join("\n", interactionDescriptionsInRoom.ToArray());
+    public void DisplayLoggedText()
+    {
+        // Display logged text
+        string logAsText = string.Join("\n", actionLog.ToArray());
+        displayText.text = logAsText;
     }
 
     public void LogStringWithReturn(string stringToAdd)
     {
         actionLog.Add(stringToAdd + "\n");
-    }
-
-    private void ClearCollectionsForNewRoom()
-    {
-        interactionDescriptionsInRoom.Clear();
-        roomNavigation.ClearExits();
     }
 }

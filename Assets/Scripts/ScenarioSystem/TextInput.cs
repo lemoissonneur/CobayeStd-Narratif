@@ -8,28 +8,25 @@ public class TextInput : MonoBehaviour
 {
     public InputField inputField;
 
-    private GameController controller;
-
     private void Awake()
     {
-        controller = GetComponent<GameController>();
         inputField.onEndEdit.AddListener(AcceptStringInput);
     }
     
     private void AcceptStringInput(string userInput)
     {
         userInput = userInput.ToLower();
-        controller.LogStringWithReturn(userInput);
+        GameController.Instance.LogStringWithReturn(userInput);
 
         char[] delimiterCharacters = { ' ' };
         string[] separatedInputWords = userInput.Split(delimiterCharacters);
 
-        for (int i = 0; i < controller.inputActions.Length;i++)
+        for (int i = 0; i < GameController.Instance.inputActions.Length;i++)
         {
-            InputAction inputAction = controller.inputActions[i];
+            InputAction inputAction = GameController.Instance.inputActions[i];
             if(inputAction.keyWord == separatedInputWords[0])
             {
-                inputAction.RespondToInput(controller, separatedInputWords);
+                inputAction.RespondToInput(separatedInputWords);
             }
 
         }
@@ -40,7 +37,7 @@ public class TextInput : MonoBehaviour
 
     private void InputComplete()
     {
-        controller.DisplayLoggedText();
+        GameController.Instance.DisplayLoggedText();
         inputField.ActivateInputField();
         inputField.text = null;
     }
