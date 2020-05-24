@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
-  m_Name: SecondNode
+  m_Name: Orb Room
   m_EditorClassIdentifier: 
-  text: 'Quisque bibendum porta lacinia. Donec venenatis urna sed erat cursus tincidunt.
-    Morbi tristique at mi quis consectetur. Proin et dolor ac dolor rutrum pulvinar
-    vitae a metus. Proin at nisl ante. Donec accumsan finibus magna vitae feugiat.
-    Vestibulum neque metus, venenatis egestas finibus eu, finibus vitae augue. Duis
-    dui magna, laoreet vitae rhoncus nec, porta id urna. '
-  playerChoices:
-  - text: Toto
-    valueNode: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
+  description: You are in a vast, dark hall.
+  roomName: Orb Room
+  exits:
+  - keyString: south
+    exitDescription: There is a door to the south  with light coming through it.
+    valueRoom: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}

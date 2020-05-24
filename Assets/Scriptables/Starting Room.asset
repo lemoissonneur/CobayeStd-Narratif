@@ -10,17 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
-  m_Name: StartingNode
+  m_Name: Starting Room
   m_EditorClassIdentifier: 
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien mauris,
-    mollis eu molestie sit amet, aliquet sit amet mauris. Pellentesque semper vulputate
-    tortor, ut maximus ligula consectetur vitae. Nam pulvinar quam vitae sapien convallis
-    porttitor. Donec et tempor lectus. Nunc ut egestas nibh. Duis viverra risus eu
-    magna consequat, sit amet aliquet tellus elementum. Vestibulum id auctor magna,
-    sed lobortis justo. Praesent eu enim orci. Nulla non semper nisl. Cras varius
-    est dolor, eget venenatis velit auctor sed. Etiam sed rutrum justo. Etiam molestie
-    hendrerit lobortis. Vestibulum non rhoncus purus. Ut sem magna, laoreet a risus
-    et, porttitor egestas ligula. Duis et odio a enim ullamcorper commodo. '
+  description: The dungeon door slams shut behind you. You are in a maze of twisty
+    little passages, all alike.
+  roomName: Startin Room
   exits:
-  - text: Toto
-    valueNode: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
+  - keyString: north
+    exitDescription: You see a dark doorway to the north.
+    valueRoom: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

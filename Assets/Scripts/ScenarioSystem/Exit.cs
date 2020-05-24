@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Exit
 {
-    public string text;
-    public Room valueNode;
+    public string keyString;
+    public string exitDescription;
+    public Room valueRoom;
 }

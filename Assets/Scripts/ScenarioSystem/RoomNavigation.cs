@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [RequireComponent(typeof(GameController))]
 public class RoomNavigation : MonoBehaviour
 {
-    public Room currentNode;
+    public Room currentRoom;
 
     private GameController controller;
+    private Dictionary<string, Room> exitDictionnary = new Dictionary<string, Room>();
 
     private void Awake()
     {
@@ -14,9 +16,10 @@ public class RoomNavigation : MonoBehaviour
 
     public void UnpackExitsInRoom()
     {
-        for (int i = 0; i < currentNode.exits.Length; i++)
+        for (int i = 0; i < currentRoom.exits.Length; i++)
         {
-            controller.exitsInRoom.Add(currentNode.exits[i].text);
+            exitDictionnary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
+            controller.interactionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
         }
     }
 }

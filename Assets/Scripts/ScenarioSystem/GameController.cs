@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     [HideInInspector]
     public RoomNavigation roomNavigation;
     [HideInInspector]
-    public List<string> exitsInRoom = new List<string>();
+    public List<string> interactionDescriptionsInRoom = new List<string>();
 
     private List<string> actionLog = new List<string>();
 
@@ -36,14 +36,14 @@ public class GameController : MonoBehaviour
     {
         roomNavigation.UnpackExitsInRoom();
 
-        string combinedText = roomNavigation.currentNode.text + "\n";
+        string combinedText = roomNavigation.currentRoom.description + "\n";
 
         LogStringWithReturn(combinedText);
     }
 
     public void DisplayPlayerChoices()
     {           
-        string joinedPlayerChoices = string.Join("\n", exitsInRoom.ToArray());
+        string joinedPlayerChoices = string.Join("\n", interactionDescriptionsInRoom.ToArray());
     }
 
     public void LogStringWithReturn(string stringToAdd)
