@@ -5,6 +5,6 @@ public class Go : InputAction
 {
     public override void RespondToInput(string[] separatedInputWords)
     {
-        //GameController.Instance.AttemptToChangeRooms(separatedInputWords[1]);
+        //RoomLogic.AttemptToChangeRooms(separatedInputWords[1]);
     }
 }

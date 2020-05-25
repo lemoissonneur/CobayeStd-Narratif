@@ -1,32 +1,27 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 
 public class GameLogic
 {
     public delegate void StartCoroutineDelegate(IEnumerator routine);
 
     private readonly StartCoroutineDelegate startCoroutine;
-    private readonly RoomLogic roomLogic;
-    private readonly RoomPresentation roomPresentation;
+    private readonly SituationLogic situationLogic;
+    private readonly SituationPresentation situationPresentation;
 
-    public GameLogic(StartCoroutineDelegate startCoroutine, RoomLogic roomLogic, RoomPresentation roomPresentation)
+    public GameLogic(StartCoroutineDelegate startCoroutine, SituationLogic situationLogic, SituationPresentation situationPresentation)
     {
         this.startCoroutine = startCoroutine;
-        this.roomLogic = roomLogic;
-        this.roomPresentation = roomPresentation;
+        this.situationLogic = situationLogic;
+        this.situationPresentation = situationPresentation;
 
         startCoroutine(GameFlow());
     }
 
-    private IEnumerator RoomFlow()
+    private IEnumerator SituationFlow()
     {
         bool playerChoose = false;
 
-        roomLogic.OnRoomChangedSuccessful += (directionNoun) => playerChoose = true;
-
-        //roomPresentation.DisplayRoomText();
+        situationLogic.OnSituationChangedSuccess += (directionNoun) => playerChoose = true;
 
         while (!playerChoose)
         {
@@ -40,12 +35,12 @@ public class GameLogic
 
         while (true)
         {
-            roomLogic.Reset();
-            roomPresentation.UpdateText();
+            situationLogic.Reset();
+            situationPresentation.LogSituationText();                  
 
             while (!partyOver)
             {
-                yield return RoomFlow();
+                yield return SituationFlow();
             }        
         }
     }           

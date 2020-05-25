@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Exit
+public class Choice
 {
     public string keyString;
-    public string exitDescription;
-    public Room valueRoom;
+    public string choiceDescription;
+    public Situation valueRoom;
 }

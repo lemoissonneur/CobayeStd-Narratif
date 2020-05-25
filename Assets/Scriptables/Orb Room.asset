@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Orb Room
   m_EditorClassIdentifier: 
   description: You are in a vast, dark hall.
-  roomName: Orb Room
-  exits:
+  situationName: 
+  choices:
   - keyString: south
-    exitDescription: There is a door to the south  with light coming through it.
+    choiceDescription: You head off to the south
     valueRoom: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
+  format:
+    fontName: 
+    size: 14
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    backColor: {r: 0, g: 0, b: 0, a: 0}
+    style: 1
