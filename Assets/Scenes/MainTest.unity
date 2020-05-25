@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc971db2e9c462e4bbd4d6458c001ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingSituation: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
+  StartingSituation: {fileID: 11400000, guid: 5df1dc35aaf1f7741afe4c5b7fed0804, type: 2}
   situationText: {fileID: 1776789439}
   playerChoice: {fileID: 1609545497}
   InputActions:

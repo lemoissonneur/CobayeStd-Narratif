@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e72b724b1425b4fa83466cc70eb155, type: 3}
-  m_Name: Scenario
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve chien enrag\xE9"
   m_EditorClassIdentifier: 
-  situations:
-  - {fileID: 11400000, guid: c0435b8476683ea40baaee1c804ae91b, type: 2}
+  keyString: 
+  choiceDescription: 
+  nextSituation: {fileID: 11400000, guid: 11f57358d0c035c4da2b4203c9d24259, type: 2}

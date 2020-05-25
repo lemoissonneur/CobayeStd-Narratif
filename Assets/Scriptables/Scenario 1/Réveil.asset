@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
-  m_Name: "Sommeil perturb\xE9"
+  m_Name: "R\xE9veil"
   m_EditorClassIdentifier: 
+  type: 0
   description: "Sale nuit quoi qu\u2019il en soit\u2026.\n\nL\xE9onard n\u2019avait
     aucune id\xE9e de l\u2019heure qu\u2019il \xE9tait lorsqu\u2019il se d\xE9cida
     enfin \xE0 sortir du lit. Plus de r\xE9veil, depuis qu\u2019il avait cass\xE9
@@ -25,12 +26,11 @@ MonoBehaviour:
     professionnelle sorte l\u2019\xE9cran de sa torpeur. L\u2019\xE9cran \xE9tait
     allum\xE9, il indiquait un message encore non ouvert re\xE7u \xE0 13h21... au
     moins il avait l'heure \xE0 pr\xE9sent.\r"
-  situationType: 0
   nextSituation: {fileID: 0}
   choices:
   - {fileID: 0}
   format:
-    fontName: 
+    font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     size: 14
     textColor: {r: 1, g: 1, b: 1, a: 1}
     backColor: {r: 0, g: 0, b: 0, a: 0}

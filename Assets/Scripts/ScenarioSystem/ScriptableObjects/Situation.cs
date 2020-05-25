@@ -7,9 +7,10 @@ public class Situation : ScriptableObject
 {
     public enum SituationType { TextOnly, TextInteractive };
 
+    
+    public SituationType type;
     [TextArea]
     public string description;
-    public SituationType situationType;
     public Situation nextSituation;
     public Choice[] choices;
 
@@ -18,7 +19,7 @@ public class Situation : ScriptableObject
     [Serializable]
     public struct TextFormatSettings
     {
-        public string fontName;
+        public Font font;
         public int size;
         public Color textColor;
         public Color backColor;
@@ -29,7 +30,7 @@ public class Situation : ScriptableObject
     public static readonly uint newNodeCharSize = 1000;
     public static readonly TextFormatSettings defaultTextFormat = new TextFormatSettings()
     {
-        fontName = "Arial.ttf",
+        //fontName = new Fon"Arial.ttf",
         size = 14,
         textColor = Color.white,
         backColor = Color.black,

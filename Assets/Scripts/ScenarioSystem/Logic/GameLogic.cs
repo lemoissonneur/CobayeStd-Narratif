@@ -25,6 +25,7 @@ public class GameLogic
 
         while (!playerChoose)
         {
+            // TO DO
             yield return null;
         }
     }
