@@ -21,7 +21,7 @@ public class SituationLogic
     {
         if(sitationSimulation.IsAnAvailableChoice(directionNoun))
         {
-            situationInterface.CurrentSituation = sitationSimulation.UpdateRoom(directionNoun);
+            situationInterface.CurrentSituation = sitationSimulation.UpdateSituation(directionNoun);
             OnSituationChangedSuccess(directionNoun);
         }
         else

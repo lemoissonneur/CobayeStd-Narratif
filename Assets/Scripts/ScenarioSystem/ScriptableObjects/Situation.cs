@@ -1,14 +1,16 @@
 ﻿using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Room", menuName = "Scenario/Room", order = 1)]
+[Serializable]
+[CreateAssetMenu(fileName = "Situation", menuName = "Scenario/Situation", order = 1)]
 public class Situation : ScriptableObject
 {
     public enum SituationType { TextOnly, TextInteractive };
 
     [TextArea]
     public string description;
-    public string situationName;
+    public SituationType situationType;
+    public Situation nextSituation;
     public Choice[] choices;
 
     public TextFormatSettings format;

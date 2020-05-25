@@ -18,11 +18,10 @@ public class SituationSimulation
         UnpackExitsInRoom();
     }
 
-    public Situation UpdateRoom(string directionNoun)
+    public Situation UpdateSituation(string directionNoun)
     {
         situation = choicesDictionnary[directionNoun];
 
-        // Clear collections for new room
         interactionDescriptionsInSituation.Clear();
         choicesDictionnary.Clear();
 
@@ -35,7 +34,7 @@ public class SituationSimulation
     {
         for (int i = 0; i < situation.choices.Length; i++)
         {
-            choicesDictionnary.Add(situation.choices[i].keyString, situation.choices[i].valueRoom);
+            choicesDictionnary.Add(situation.choices[i].keyString, situation.choices[i].nextSituation);
             interactionDescriptionsInSituation.Add(situation.choices[i].choiceDescription);
         }
     }

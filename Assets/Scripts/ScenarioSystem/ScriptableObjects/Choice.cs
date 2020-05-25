@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Choice
+[CreateAssetMenu(fileName = "Choice", menuName = "Scenario/Choice", order = 1)]
+public class Choice : ScriptableObject
 {
     public string keyString;
+    [TextArea]
     public string choiceDescription;
-    public Situation valueRoom;
+    public Situation nextSituation;
 }

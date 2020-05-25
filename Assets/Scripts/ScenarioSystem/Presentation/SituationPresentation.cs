@@ -45,7 +45,6 @@ public class SituationPresentation
     public void LogSituationChangedFailure(string directionNoun)
     {
         LogStringWithReturn("There is no path to the " + directionNoun);
-        LogSituationText();
         UpdateDisplay();
     }
 

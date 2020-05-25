@@ -6,15 +6,19 @@ public class Game : MonoBehaviour
     public GameObject SituationObject;
 
     private GameLogic gameLogic;
+    private SituationHandler situationHandler;
 
     private void Awake()
     {
-        SituationHandler situationHandler = SituationObject.GetComponent<SituationHandler>();
+        situationHandler = SituationObject.GetComponent<SituationHandler>();
         if(!situationHandler)
         {
             throw new UnityException("No display text defined. Please add a reference to a display text game object in Game.");
-        }
+        }        
+    }
 
+    private void Start()
+    {
         gameLogic = new GameLogic((routine) => StartCoroutine(routine), situationHandler.SituationLogic, situationHandler.SituationPresentation);
-    }    
+    }
 }
