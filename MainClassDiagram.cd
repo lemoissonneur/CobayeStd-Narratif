@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameManager" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAUAAAAAAICAAAAAAAAAAIAgAAAAAADAYIAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Node" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAEAAAAAAAAAAQIEaAABAgCgSAgAAABYRAARAQAA=</HashCode>
+      <FileName>Assets\Scripts\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeInfo" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQEAAAAACCACAAQAAAEAAYCEEAEIIAAAAQAAGEAAAA=</HashCode>
+      <FileName>Assets\Scripts\NodeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChoiceEditor" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Editor\ChoiceEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScenarioEditor" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Editor\ScenarioEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SituationEditor" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEIAAAAAAAAAAAAIGAiCAAAAAAAAAAAAAAAgCAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Editor\SituationEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerInput" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAACAAAAQAAAAEAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Input\PlayerInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameLogic" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAggAAAAAAAAAAAAAAAAACACAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Logic\GameLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SituationLogic" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIBAAAAAABAAAAAAAAQAAgAAAAAAAAAAAAAAAQIA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Logic\SituationLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAAAAAAACAAAgAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\MonoBehaviour\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SituationHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBQAAQiBAACAAAAAAAQAAAAAgAQAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\MonoBehaviour\SituationHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SituationPresentation" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAGAAAAAAAAAAABAEACACAAAIBEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Presentation\SituationPresentation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Choice" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Choice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameData" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Go" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Go.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputAction" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\InputAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scenario" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Scenario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Situation" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAIAAACAAAAAATAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Situation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SituationSimulation" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQEAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAICAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Simulation\SituationSimulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TreeInfo" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABABACSAAAKEAEAACAAAhCAABACAQMAAAQEgAAA=</HashCode>
+      <FileName>Assets\Scripts\TreeInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IPlayerInput" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\Input\IPlayerInput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ISituationInterface" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenarioSystem\MonoBehaviour\ISituationInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
