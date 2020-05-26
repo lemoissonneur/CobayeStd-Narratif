@@ -15,7 +15,7 @@ public class SituationSimulation
         _interactionDescriptionsInSituation = new List<string>();
         _choicesDictionnary = new Dictionary<string, Situation>();
 
-        UnpackExitsInRoom();
+        UnpackChoicesInSituation();
     }
 
     public Situation UpdateSituation(string directionNoun)
@@ -25,12 +25,12 @@ public class SituationSimulation
         _interactionDescriptionsInSituation.Clear();
         _choicesDictionnary.Clear();
 
-        UnpackExitsInRoom();       
+        UnpackChoicesInSituation();       
 
         return _situation;
     }
 
-    public void UnpackExitsInRoom()
+    private void UnpackChoicesInSituation()
     {
         for (int i = 0; i < _situation._choices.Length; i++)
         {
