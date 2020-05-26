@@ -12,25 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
   m_Name: "R\xEAve \xE9cole en pyjama"
   m_EditorClassIdentifier: 
-  keyString: "R\xEAve \xE9cole en pyjama"
-  choiceDescription: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver
-    au coll\xE8ge qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es.
-    Devant la salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e
-    l\u2019attendait ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas
-    mal ton nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement
-    dans les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
-    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
-    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
-    (attendez L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
-    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
-    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
-    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
-    se r\xE9veilla en sursaut et en sueur, une question se figea dans son esprit :
-    pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ses deux cons d\xE9j\xE0
-    ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage pris en largeur
-    qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un type qui avait
-    mis d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le sait, elle l\u2019avait
-    fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien fait pour ta
-    gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te marrer de mon
-    pyjama rose\u2026\r"
-  nextSituation: {fileID: 0}
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver qu\u2019il arrive au coll\xE8ge en
+    pyjama."
+  ChoiceDescription: "C\u2019est l\u2019exception qui fait la r\xE8gle dit-on. L\xE9onard
+    trouvait ce proverbe stupide. Mais c\u2019est la premi\xE8re chose qui lui vint
+    \xE0 l\u2019esprit le lendemain apr\xE8s avoir dormi toute la nuit comme un loir.
+    Pas le moindre cauchemar \xE0 l\u2019horizon. De nos jours, mal dormir \xE9tait
+    la r\xE8gle. La nuit qui venait de se terminer \xE9tait une exception. Et le probl\xE8me
+    avec les exceptions\u2026"
+  _nextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
