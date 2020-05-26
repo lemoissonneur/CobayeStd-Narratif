@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: Le coucher
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "Comme tous les soirs aux alentours de 22h30, L\xE9onard s\u2019appr\xEAtait
+    \xE0 aller se coucher. Comme tous les soirs, la peur au ventre. \xC0 cause de
+    cette peur qui revenait sans cesse, ses intestins \xE9taient m\xEAme devenus douloureux
+    ces derni\xE8res semaines. \r\n-\tVoil\xE0 qui ne va pas arranger les choses,
+    songea-t-il avec d\xE9pit, encore une nuit de merde en perspective\u2026\r\nPresque
+    toutes les nuits, L\xE9onard allait sans doute une fois encore faire un cauchemar
+    qui allait immanquablement le r\xE9veiller en sursaut \r\n-\tUn seul si j\u2019ai
+    de la chance\u2026\r\nSa s\u0153ur, L\xE9ana, avait \xE9t\xE9 moins chanceuse.
+    Apr\xE8s plusieurs mois \xE0 faire trois ou quatre cauchemars par nuit. Une lourde
+    fatigue s\u2019\xE9tait empar\xE9e d\u2019elle. Fatigue qui se changea en d\xE9pression.
+    C\u2019\xE9tait un voisin de palier de L\xE9ana qui s\u2019\xE9tait charg\xE9
+    de r\xE9veiller L\xE9onard pout lui annoncer qu\u2019elle allait \xEAtre hospitalis\xE9e.
+    Elle venait de faire une tentative de suicide. L\xE9onard s\u2019\xE9tait aussit\xF4t
+    rendu \xE0 la capitale. \r\nIl passa un mois entier au chevet de sa s\u0153ur.
+    D\u2019abord \xE0 l\u2019h\xF4pital, puis chez elle directement.\r\nIl venait
+    de rentrer chez lui en Bretagne.\r\nM\xEAme si L\xE9onard avait \xE9t\xE9 le pire
+    d\xE9tective du monde, il aurait quand m\xEAme devin\xE9 que ses douleurs \xE0
+    l\u2019intestin \xE9taient li\xE9es \xE0 la nouvelle de la tentative de suicide
+    de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
+    le pire d\xE9tective du monde.\r"
+  NextSituation: {fileID: 0}
+  _choices:
+  - {fileID: 11400000, guid: b3c304e6d47ea884095aeaa6fd84b30c, type: 2}
+  - {fileID: 11400000, guid: 31b256ded781d7f4b97cf1aa1ec8fb26, type: 2}
+  - {fileID: 11400000, guid: 42bd5c9118860a14c80693756ef6941c, type: 2}
+  Format:
+    font: {fileID: 0}
+    size: 0
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+    backColor: {r: 0, g: 0, b: 0, a: 0}
+    style: 0

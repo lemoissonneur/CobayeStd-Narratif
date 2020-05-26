@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve chien enrag\xE9"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver d\u2019un chien qui le poursuit."
+  ChoiceDescription: "Le sommeil s\u2019empara rapidement de L\xE9onard. Il avait
+    fait r\xE9cemment l\u2019acquisition d\u2019un sommier neuf et haut de gamme.
+    Dans l\u2019espoir que gr\xE2ce \xE0 ce dernier, il ferait moins de cauchemars.
+    Ou qu\u2019au pire, c\u2019est dernier seraient plus agr\xE9ables\u2026 Rat\xE9,
+    on n\u2019arr\xEAte pas la crise onirique avec un sommier, f\xFBt-il d\u2019excellente
+    qualit\xE9.\r\nAu moins, il aura essay\xE9\u2026\r\nCette nuit donc, il r\xEAva
+    qu\u2019il courait dans une rue du lotissement de la ville o\xF9 il avait grandi.
+    Il \xE9tait redevenu un enfant. Il \xE9tait aussi paniqu\xE9 et en sueur. Il \xE9tait
+    poursuivi par le terrible cocker de ses voisins. Bien d\xE9cid\xE9 \xE0 le mordre.
+    Tout le voisinage se rassemblait petit \xE0 petit pour assister \xE0 cette course-poursuite
+    qui n\u2019en finissait pas. Mais au lieu de chercher \xE0 l\u2019aider, les voisins
+    trouvaient plus amusant de se moquer de lui, et de le pointer du doigt.\r\nFinalement,
+    il sentit les dents du canid\xE9 serrer puissamment son talon gauche. Ce qui eut
+    pour effet de r\xE9veiller un L\xE9onard en sueur. A tel point qu\u2019on aurait
+    pu croire qu\u2019il avait r\xE9ellement couru.\r"
+  _nextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

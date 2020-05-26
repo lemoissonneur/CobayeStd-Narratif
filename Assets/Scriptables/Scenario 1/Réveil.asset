@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "R\xE9veil"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Sale nuit quoi qu\u2019il en soit\u2026.\r\n\r\nL\xE9onard n\u2019avait
+    aucune id\xE9e de l\u2019heure qu\u2019il \xE9tait lorsqu\u2019il se d\xE9cida
+    enfin \xE0 sortir du lit. Plus de r\xE9veil, depuis qu\u2019il avait cass\xE9
+    il y a deux mois en lui tombant dessus lors d\u2019un \xE9ni\xE8me cauchemar.
+    Les lourds volets en bois \xE9taient totalement rabattus et emp\xEAchait le moindre
+    rayon de soleil de p\xE9n\xE9trer \xE0 l\u2019int\xE9rieur de sa chambre. \r\nIl
+    n\u2019y avait que deux sources de lumi\xE8res\u2026 celle de son t\xE9l\xE9phone
+    portable qui indiquait qu\u2019il avait un appel manqu\xE9. Et celle de l\u2019\xE9cran
+    de son ordinateur portable. Celui-ci \xE9tait rest\xE9 en veille sur son bureau.
+    L\xE9onard l\u2019avait programm\xE9 pour chaque mail arrivant sur sa messagerie
+    professionnelle sorte l\u2019\xE9cran de sa torpeur. L\u2019\xE9cran \xE9tait
+    allum\xE9, il indiquait un message encore non ouvert re\xE7u \xE0 13h21... au
+    moins il avait l'heure \xE0 pr\xE9sent.\r"
+  NextSituation: {fileID: 0}
+  _choices: []
+  Format:
+    font: {fileID: 0}
+    size: 0
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+    backColor: {r: 0, g: 0, b: 0, a: 0}
+    style: 0

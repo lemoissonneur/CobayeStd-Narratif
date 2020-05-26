@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve \xE9cole en pyjama"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver qu\u2019il arrive au coll\xE8ge en
+    pyjama."
+  ChoiceDescription: "C\u2019est l\u2019exception qui fait la r\xE8gle dit-on. L\xE9onard
+    trouvait ce proverbe stupide. Mais c\u2019est la premi\xE8re chose qui lui vint
+    \xE0 l\u2019esprit le lendemain apr\xE8s avoir dormi toute la nuit comme un loir.
+    Pas le moindre cauchemar \xE0 l\u2019horizon. De nos jours, mal dormir \xE9tait
+    la r\xE8gle. La nuit qui venait de se terminer \xE9tait une exception. Et le probl\xE8me
+    avec les exceptions\u2026"
+  _nextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

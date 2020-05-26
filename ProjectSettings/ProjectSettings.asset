@@ -572,6 +572,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -592,10 +593,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: c57424f9-9e85-4b97-ab0a-fba2a4f88e84
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: CobayeStd-Narratif
+  organizationId: b2b
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
