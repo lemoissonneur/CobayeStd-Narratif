@@ -5,33 +5,33 @@ public class SituationPresentation
 {
     public delegate void DisplayDelegate(bool visible);
 
-    private DisplayDelegate display;
-    private readonly SituationLogic situationLogic;
-    private readonly Text situationText;
+    private DisplayDelegate _display;
+    private readonly SituationLogic _situationLogic;
+    private readonly Text _situationText;
     
-    private static List<string> actionLog = new List<string>();
+    private static List<string> _actionLog = new List<string>();
 
     public SituationPresentation(DisplayDelegate display, SituationLogic situationLogic, Text situationText)
     {
-        this.display = display;
-        this.situationLogic = situationLogic;
-        this.situationText = situationText;
+        this._display = display;
+        this._situationLogic = situationLogic;
+        this._situationText = situationText;
     }
 
     private void LogStringWithReturn(string stringToAdd)
     {
-        actionLog.Add(stringToAdd + "\n");
+        _actionLog.Add(stringToAdd + "\n");
     }
 
     private void UpdateDisplay()
     {
-        string logAsText = string.Join("\n", actionLog.ToArray());
-        situationText.text = logAsText;
+        string logAsText = string.Join("\n", _actionLog.ToArray());
+        _situationText.text = logAsText;
     }    
 
     public void LogSituationText()
     {
-        LogStringWithReturn(situationLogic.GetCurrentSituation().description + "\n");
+        LogStringWithReturn(_situationLogic.GetCurrentSituation().Description + "\n");
         UpdateDisplay();
     }
 

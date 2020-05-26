@@ -6,8 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Choice", menuName = "Scenario/Choice", order = 1)]
 public class Choice : ScriptableObject
 {
-    public string keyString;
+    public string KeyString;
     [TextArea]
-    public string choiceDescription;
-    public Situation nextSituation;
+    public string ChoiceDescription;
+    public Situation _nextSituation;
 }

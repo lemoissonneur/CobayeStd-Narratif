@@ -7,5 +7,5 @@ using UnityEngine;
 [System.Serializable]
 public class Scenario : ScriptableObject
 {
-    public Situation[] situations;
+    public Situation[] _situations;
 }

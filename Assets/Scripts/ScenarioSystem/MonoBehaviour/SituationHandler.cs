@@ -7,9 +7,9 @@ public class SituationHandler : MonoBehaviour, ISituationInterface
 
     [Header("Situation references")]
     [Tooltip("Reference to the Text GameObject Component which will handle the situation text")]
-    public Text situationText;
+    public Text SituationText;
     [Tooltip("Reference to the GameObject which will handle the player choices display")]
-    public InputField playerChoice;
+    public InputField PlayerChoice;
 
     [Header("Actions available")]
     public InputAction[] InputActions;
@@ -24,29 +24,29 @@ public class SituationHandler : MonoBehaviour, ISituationInterface
     {
         get
         {
-            return currentSituation;
+            return _currentSituation;
         }
         set
         {
-            currentSituation = value;
+            _currentSituation = value;
         }
     }
-    private Situation currentSituation;
-    private SituationSimulation situationSimulation;
-    private IPlayerInput playerInput;
+    private Situation _currentSituation;
+    private SituationSimulation _situationSimulation;
+    private IPlayerInput _playerInput;
 
-    private readonly static char[] delimiterCharacters = { ' ' };
+    private readonly static char[] _delimiterCharacters = { ' ' };
 
     private void Awake()
     {
-        playerInput = new PlayerInput(playerChoice);
-        playerInput.OnAcceptedStringInput += (userInput) => SituationPresentation.LogUserInput(userInput);
-        playerInput.OnAcceptedStringInput += (userInput) => OnSituationChangeAttempt(userInput);
+        _playerInput = new PlayerInput(PlayerChoice);
+        _playerInput.OnAcceptedStringInput += (userInput) => SituationPresentation.LogUserInput(userInput);
+        _playerInput.OnAcceptedStringInput += (userInput) => OnSituationChangeAttempt(userInput);
 
-        currentSituation = StartingSituation;
-        situationSimulation = new SituationSimulation(currentSituation);
-        SituationLogic = new SituationLogic(this, situationSimulation);
-        SituationPresentation = new SituationPresentation((visible) => gameObject.SetActive(visible), SituationLogic, situationText);
+        _currentSituation = StartingSituation;
+        _situationSimulation = new SituationSimulation(_currentSituation);
+        SituationLogic = new SituationLogic(this, _situationSimulation);
+        SituationPresentation = new SituationPresentation((visible) => gameObject.SetActive(visible), SituationLogic, SituationText);
 
         SituationLogic.OnSituationChangedSuccess += (directionNoun) => SituationPresentation.LogSituationChangedSuccess(directionNoun);
 
@@ -55,7 +55,7 @@ public class SituationHandler : MonoBehaviour, ISituationInterface
 
     private void OnSituationChangeAttempt(string userInput)
     {
-        string[] separatedInputWords = userInput.Split(delimiterCharacters);
+        string[] separatedInputWords = userInput.Split(_delimiterCharacters);
         for (int i = 0; i < InputActions.Length; i++)
         {
             InputAction inputAction = InputActions[i];

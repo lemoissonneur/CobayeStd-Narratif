@@ -4,15 +4,15 @@ public class GameLogic
 {
     public delegate void StartCoroutineDelegate(IEnumerator routine);
 
-    private readonly StartCoroutineDelegate startCoroutine;
-    private readonly SituationLogic situationLogic;
-    private readonly SituationPresentation situationPresentation;
+    private readonly StartCoroutineDelegate _startCoroutine;
+    private readonly SituationLogic _situationLogic;
+    private readonly SituationPresentation _situationPresentation;
 
     public GameLogic(StartCoroutineDelegate startCoroutine, SituationLogic situationLogic, SituationPresentation situationPresentation)
     {
-        this.startCoroutine = startCoroutine;
-        this.situationLogic = situationLogic;
-        this.situationPresentation = situationPresentation;
+        this._startCoroutine = startCoroutine;
+        this._situationLogic = situationLogic;
+        this._situationPresentation = situationPresentation;
 
         startCoroutine(GameFlow());
     }
@@ -21,7 +21,7 @@ public class GameLogic
     {
         bool playerChoose = false;
 
-        situationLogic.OnSituationChangedSuccess += (directionNoun) => playerChoose = true;
+        _situationLogic.OnSituationChangedSuccess += (directionNoun) => playerChoose = true;
 
         while (!playerChoose)
         {
@@ -36,8 +36,8 @@ public class GameLogic
 
         while (true)
         {
-            situationLogic.Reset();
-            situationPresentation.LogSituationText();                  
+            _situationLogic.Reset();
+            _situationPresentation.LogSituationText();                  
 
             while (!partyOver)
             {

@@ -5,7 +5,7 @@ public class Game : MonoBehaviour
     [Header("Miscallenous")]
     public GameObject SituationObject;
 
-    private GameLogic gameLogic;
+    private GameLogic _gameLogic;
     private SituationHandler situationHandler;
 
     private void Awake()
@@ -19,6 +19,6 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-        gameLogic = new GameLogic((routine) => StartCoroutine(routine), situationHandler.SituationLogic, situationHandler.SituationPresentation);
+        _gameLogic = new GameLogic((routine) => StartCoroutine(routine), situationHandler.SituationLogic, situationHandler.SituationPresentation);
     }
 }

@@ -6,12 +6,12 @@ using UnityEngine;
 [CustomEditor(typeof(Situation))]
 public class SituationEditor : Editor
 {
-    private Situation situation;
+    private Situation _situation;
 
-    private SerializedProperty situationTypeProperty;
-    private SerializedProperty descriptionProperty;
-    private SerializedProperty nextSituationProperty;
-    private SerializedProperty choicesProperty;
+    private SerializedProperty _situationTypeProperty;
+    private SerializedProperty _descriptionProperty;
+    private SerializedProperty _nextSituationProperty;
+    private SerializedProperty _choicesProperty;
 
     private const string situationPropSituationType = "situationType";
     private const string situationPropDescription = "description";
@@ -20,7 +20,7 @@ public class SituationEditor : Editor
 
     private void OnEnable()
     {
-        situation = (Situation)target;
+        _situation = (Situation)target;
 
         if (target == null)
         {
@@ -28,10 +28,10 @@ public class SituationEditor : Editor
             return;
         }
 
-        descriptionProperty = serializedObject.FindProperty(situationPropDescription);
-        situationTypeProperty = serializedObject.FindProperty(situationPropSituationType);
-        nextSituationProperty = serializedObject.FindProperty(situationPropNextSituation);
-        choicesProperty = serializedObject.FindProperty(situationPropChoices);
+        _descriptionProperty = serializedObject.FindProperty(situationPropDescription);
+        _situationTypeProperty = serializedObject.FindProperty(situationPropSituationType);
+        _nextSituationProperty = serializedObject.FindProperty(situationPropNextSituation);
+        _choicesProperty = serializedObject.FindProperty(situationPropChoices);
     }
 
     public override void OnInspectorGUI()

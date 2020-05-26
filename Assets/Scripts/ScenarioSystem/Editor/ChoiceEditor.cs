@@ -6,11 +6,11 @@ using UnityEngine;
 [CustomEditor(typeof(Choice))]
 public class ChoiceEditor : Editor
 {
-    private Choice choice;
+    private Choice _choice;
 
     private void OnEnable()
     {
-        choice = (Choice)target;
+        _choice = (Choice)target;
         
         if(target == null)
         {

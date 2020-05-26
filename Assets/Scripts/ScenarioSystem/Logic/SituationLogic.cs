@@ -5,23 +5,23 @@ public class SituationLogic
     public Action<string> OnSituationChangedSuccess;
     public Action<string> OnSituationChangedFailed;
 
-    private readonly ISituationInterface situationInterface;
-    private readonly SituationSimulation sitationSimulation;
-    private readonly Situation startingSimulation;
+    private readonly ISituationInterface _situationInterface;
+    private readonly SituationSimulation _sitationSimulation;
+    private readonly Situation _startingSituation;
 
     public SituationLogic(ISituationInterface situationInterface, SituationSimulation situationSimulation)
     {
-        this.situationInterface = situationInterface;
-        this.sitationSimulation = situationSimulation;
+        this._situationInterface = situationInterface;
+        this._sitationSimulation = situationSimulation;
 
-        startingSimulation = situationInterface.CurrentSituation;
+        _startingSituation = situationInterface.CurrentSituation;
     }   
 
     public void AttemptToChangeSituation(string directionNoun)
     {
-        if(sitationSimulation.IsAnAvailableChoice(directionNoun))
+        if(_sitationSimulation.IsAnAvailableChoice(directionNoun))
         {
-            situationInterface.CurrentSituation = sitationSimulation.UpdateSituation(directionNoun);
+            _situationInterface.CurrentSituation = _sitationSimulation.UpdateSituation(directionNoun);
             OnSituationChangedSuccess(directionNoun);
         }
         else
@@ -32,11 +32,11 @@ public class SituationLogic
 
     public void Reset()
     {
-        situationInterface.CurrentSituation = startingSimulation;
+        _situationInterface.CurrentSituation = _startingSituation;
     }
 
     public Situation GetCurrentSituation()
     {
-        return situationInterface.CurrentSituation;
+        return _situationInterface.CurrentSituation;
     }
 }

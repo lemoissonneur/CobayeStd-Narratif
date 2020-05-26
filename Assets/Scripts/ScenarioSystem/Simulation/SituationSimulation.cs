@@ -3,44 +3,44 @@ using System.Collections.Generic;
 
 public class SituationSimulation
 {
-    private Situation situation;
+    private Situation _situation;
 
-    private readonly List<string> interactionDescriptionsInSituation;
-    private readonly Dictionary<string, Situation> choicesDictionnary;
+    private readonly List<string> _interactionDescriptionsInSituation;
+    private readonly Dictionary<string, Situation> _choicesDictionnary;
 
     public SituationSimulation(Situation startingSituation)
     {
-        situation = startingSituation;
+        _situation = startingSituation;
 
-        interactionDescriptionsInSituation = new List<string>();
-        choicesDictionnary = new Dictionary<string, Situation>();
+        _interactionDescriptionsInSituation = new List<string>();
+        _choicesDictionnary = new Dictionary<string, Situation>();
 
         UnpackExitsInRoom();
     }
 
     public Situation UpdateSituation(string directionNoun)
     {
-        situation = choicesDictionnary[directionNoun];
+        _situation = _choicesDictionnary[directionNoun];
 
-        interactionDescriptionsInSituation.Clear();
-        choicesDictionnary.Clear();
+        _interactionDescriptionsInSituation.Clear();
+        _choicesDictionnary.Clear();
 
         UnpackExitsInRoom();       
 
-        return situation;
+        return _situation;
     }
 
     public void UnpackExitsInRoom()
     {
-        for (int i = 0; i < situation.choices.Length; i++)
+        for (int i = 0; i < _situation._choices.Length; i++)
         {
-            choicesDictionnary.Add(situation.choices[i].keyString, situation.choices[i].nextSituation);
-            interactionDescriptionsInSituation.Add(situation.choices[i].choiceDescription);
+            _choicesDictionnary.Add(_situation._choices[i].KeyString, _situation._choices[i]._nextSituation);
+            _interactionDescriptionsInSituation.Add(_situation._choices[i].ChoiceDescription);
         }
     }
 
     public bool IsAnAvailableChoice(string choice)
     {
-        return choicesDictionnary.ContainsKey(choice);
+        return _choicesDictionnary.ContainsKey(choice);
     }
 }

@@ -8,13 +8,13 @@ public class Situation : ScriptableObject
     public enum SituationType { TextOnly, TextInteractive };
 
     
-    public SituationType type;
+    public SituationType Type;
     [TextArea]
-    public string description;
-    public Situation nextSituation;
-    public Choice[] choices;
+    public string Description;
+    public Situation NextSituation;
+    public Choice[] _choices;
 
-    public TextFormatSettings format;
+    public TextFormatSettings Format;
 
     [Serializable]
     public struct TextFormatSettings
@@ -27,8 +27,8 @@ public class Situation : ScriptableObject
     };
 
     // default values
-    public static readonly uint newNodeCharSize = 1000;
-    public static readonly TextFormatSettings defaultTextFormat = new TextFormatSettings()
+    public static readonly uint NewNodeCharSize = 1000;
+    public static readonly TextFormatSettings DefaultTextFormat = new TextFormatSettings()
     {
         //fontName = new Fon"Arial.ttf",
         size = 14,

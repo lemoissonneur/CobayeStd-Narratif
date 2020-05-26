@@ -2,7 +2,7 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="ChoiceEditor">
     <Position X="19.25" Y="6.5" Width="2" />
-    <AssociationLine Name="choice" Type="Choice" FixedFromPoint="true">
+    <AssociationLine Name="_choice" Type="Choice" FixedFromPoint="true">
       <Path>
         <Point X="20.125" Y="6.5" />
         <Point X="20.125" Y="5.675" />
@@ -12,11 +12,11 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Editor\ChoiceEditor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="choice" />
+      <Field Name="_choice" />
     </ShowAsAssociation>
   </Class>
   <Class Name="ScenarioEditor">
@@ -28,7 +28,7 @@
   </Class>
   <Class Name="SituationEditor">
     <Position X="18.5" Y="0.5" Width="3" />
-    <AssociationLine Name="situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="19.938" Y="3.723" />
         <Point X="19.938" Y="4.062" />
@@ -36,11 +36,11 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAQAEIAAAAAAAAAAAAIGAiCAAAAAAAAAAAAAAAgCAA=</HashCode>
+      <HashCode>AAAAAEIAAAIQAAAAQAAIKAACAAEAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Editor\SituationEditor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="situation" />
+      <Field Name="_situation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="GameLogic">
@@ -52,52 +52,52 @@
         </TypeIdentifier>
       </Delegate>
     </NestedTypes>
-    <AssociationLine Name="situationLogic" Type="SituationLogic" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_situationLogic" Type="SituationLogic" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="0.688" Y="5.199" />
-        <Point X="0.688" Y="10" />
-        <Point X="8.75" Y="10" />
+        <Point X="0.688" Y="9.866" />
+        <Point X="8.75" Y="9.866" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAggAAAAAAAAAAAAAAAAACACAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAAABAAEAAAAAAAAAACAAAAAAAAAgAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Logic\GameLogic.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="situationPresentation" />
-      <Field Name="situationLogic" />
+      <Field Name="_situationLogic" />
+      <Field Name="_situationPresentation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SituationLogic">
     <Position X="8.75" Y="8.25" Width="6" />
-    <AssociationLine Name="sitationSimulation" Type="SituationSimulation">
+    <AssociationLine Name="_situationInterface" Type="ISituationInterface">
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="-1.602" Y="0.279" Height="0.182" Width="1.354" />
+        <Position X="-1.138" Y="-1.288" Height="0.182" Width="1.504" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="situationInterface" Type="ISituationInterface">
+    <AssociationLine Name="_sitationSimulation" Type="SituationSimulation">
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="-0.823" Y="-1.227" Height="0.182" Width="1.504" />
+        <Position X="-1.493" Y="0.315" Height="0.182" Width="1.354" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="startingSimulation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_startingSituation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="14.75" Y="8.875" />
-        <Point X="15.688" Y="8.875" />
+        <Point X="14.75" Y="8.625" />
+        <Point X="15.688" Y="8.625" />
         <Point X="15.688" Y="6.375" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.22" Y="2.407" />
+        <Position X="-0.461" Y="2.381" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAgAIBAAAAAABAAAAAAAAQAAgAAAAAAAAAAAAAAAQIA=</HashCode>
+      <HashCode>AAAAABAAAAAABABAAgAAAAAAgAAAAAAAAAAAAEAAQIA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Logic\SituationLogic.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="sitationSimulation" />
-      <Field Name="situationInterface" />
-      <Field Name="startingSimulation" />
+      <Field Name="_situationInterface" />
+      <Field Name="_sitationSimulation" />
+      <Field Name="_startingSituation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Game">
@@ -113,35 +113,16 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAgAAAACAAAAAAAAAAAACAAAgAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAgAAAACAAAAAAAAAAAACAAAAAAAAAAAAACAAAAEA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\MonoBehaviour\Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="gameLogic" />
+      <Field Name="_gameLogic" />
       <Field Name="situationHandler" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SituationHandler" BaseTypeListCollapsed="true">
     <Position X="8.75" Y="2" Width="3.75" />
-    <AssociationLine Name="playerInput" Type="IPlayerInput" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="10.5" Y="2" />
-        <Point X="10.5" Y="0.969" />
-        <Point X="8" Y="0.969" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.478" Y="0.124" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <AssociationLine Name="situationSimulation" Type="SituationSimulation" FixedToPoint="true">
-      <Path>
-        <Point X="10.938" Y="4.454" />
-        <Point X="10.938" Y="5.25" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.473" Y="0.213" />
-      </MemberNameLabel>
-    </AssociationLine>
     <AssociationLine Name="SituationLogic" Type="SituationLogic" FixedFromPoint="true">
       <Path>
         <Point X="9.75" Y="4.454" />
@@ -155,18 +136,37 @@
         <Point X="7" Y="6.75" />
       </Path>
     </AssociationLine>
+    <AssociationLine Name="_situationSimulation" Type="SituationSimulation" FixedToPoint="true">
+      <Path>
+        <Point X="10.938" Y="4.454" />
+        <Point X="10.938" Y="5.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.473" Y="0.213" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_playerInput" Type="IPlayerInput" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="2" />
+        <Point X="10.5" Y="0.969" />
+        <Point X="8" Y="0.969" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.478" Y="0.124" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAIBQAAQiBAACAAAAAAAQAAAAAgAQAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AACBAAAQgAAACAIAAAAAAIAAAAgAQgAAAAAICAAAAEA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\MonoBehaviour\SituationHandler.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="currentSituation" />
-      <Field Name="playerInput" />
-      <Field Name="situationSimulation" />
       <Field Name="StartingSituation" />
-      <Property Name="CurrentSituation" />
+      <Field Name="_currentSituation" />
+      <Field Name="_situationSimulation" />
+      <Field Name="_playerInput" />
       <Property Name="SituationLogic" />
       <Property Name="SituationPresentation" />
+      <Property Name="CurrentSituation" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -183,16 +183,16 @@
       </Delegate>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAGAAAAAAAAAAABAEACACAAAIBEAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAGAAABAAAAAAABEAAAAAAAAIBEAAQAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Presentation\SituationPresentation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="situationLogic" />
+      <Field Name="_situationLogic" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Choice">
     <Position X="19.25" Y="4.25" Width="2" />
-    <AssociationLine Name="nextSituation" Type="Situation" FixedFromPoint="true">
+    <AssociationLine Name="_nextSituation" Type="Situation" FixedFromPoint="true">
       <Path>
         <Point X="19.25" Y="4.688" />
         <Point X="17.5" Y="4.688" />
@@ -202,18 +202,18 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Choice.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="nextSituation" />
+      <Field Name="_nextSituation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Scenario">
     <Position X="15.25" Y="0.5" Width="1.75" />
-    <AssociationLine Name="situations" Type="Situation" FixedToPoint="true">
+    <AssociationLine Name="_situations" Type="Situation" FixedToPoint="true">
       <Path>
-        <Point X="16.188" Y="1.497" />
+        <Point X="16.188" Y="1.291" />
         <Point X="16.188" Y="2.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -221,11 +221,11 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Scenario.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="situations" />
+      <Field Name="_situations" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Situation">
@@ -245,7 +245,7 @@
         </TypeIdentifier>
       </Struct>
     </NestedTypes>
-    <AssociationLine Name="nextSituation" Type="Situation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="NextSituation" Type="Situation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="17.5" Y="3.313" />
         <Point X="17.735" Y="3.313" />
@@ -257,7 +257,7 @@
         <Position X="-0.981" Y="0.317" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="choices" Type="Choice" FixedToPoint="true">
+    <AssociationLine Name="_choices" Type="Choice" FixedToPoint="true">
       <Path>
         <Point X="17.5" Y="4.938" />
         <Point X="19.25" Y="4.938" />
@@ -267,19 +267,19 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEAAAAIAAACAAAAAATAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAwAAAAAAAAgBAAAAgAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Situation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="nextSituation" />
+      <Field Name="NextSituation" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Field Name="choices" />
+      <Field Name="_choices" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SituationSimulation">
     <Position X="10.5" Y="5.25" Width="3.5" />
-    <AssociationLine Name="situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="13.156" Y="5.25" />
         <Point X="13.156" Y="4.875" />
@@ -287,11 +287,11 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAQEAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAICAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAIAAAIAAAAABE=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Simulation\SituationSimulation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="situation" />
+      <Field Name="_situation" />
     </ShowAsAssociation>
   </Class>
   <Interface Name="IPlayerInput">
@@ -309,7 +309,7 @@
         <Point X="16.812" Y="6.375" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.839" Y="1.908" />
+        <Position X="0.817" Y="3.085" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
