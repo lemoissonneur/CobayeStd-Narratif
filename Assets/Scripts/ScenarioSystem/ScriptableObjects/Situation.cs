@@ -7,12 +7,11 @@ public class Situation : ScriptableObject
 {
     public enum SituationType { TextOnly, TextInteractive };
 
-    
     public SituationType Type;
     [TextArea]
     public string Description;
     public Situation NextSituation;
-    public Choice[] _choices;
+    public Choice[] Choices;
 
     public TextFormatSettings Format;
 
@@ -28,7 +27,7 @@ public class Situation : ScriptableObject
 
     // default values
     public static readonly uint NewNodeCharSize = 1000;
-    public static readonly TextFormatSettings DefaultTextFormat = new TextFormatSettings()
+    internal static readonly TextFormatSettings defaultTextFormat = new TextFormatSettings()
     {
         //fontName = new Fon"Arial.ttf",
         size = 14,
@@ -36,4 +35,9 @@ public class Situation : ScriptableObject
         backColor = Color.black,
         style = FontStyle.Normal
     };
+
+    internal void AddChoice()
+    {
+        throw new NotImplementedException();
+    }
 }

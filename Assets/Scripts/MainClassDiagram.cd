@@ -30,13 +30,15 @@
     <Position X="18.5" Y="0.5" Width="3" />
     <AssociationLine Name="_situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19.938" Y="3.723" />
-        <Point X="19.938" Y="4.062" />
+        <Point X="19.938" Y="4.108" />
+        <Point X="19.938" Y="4.123" />
+        <Point X="18.484" Y="4.123" />
+        <Point X="18.484" Y="4.062" />
         <Point X="17.5" Y="4.062" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAEIAAAIQAAAAQAAIKAACAAEAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAEIAACIQAAAAQAAIKAACAAEAIAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Editor\SituationEditor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -192,7 +194,7 @@
   </Class>
   <Class Name="Choice">
     <Position X="19.25" Y="4.25" Width="2" />
-    <AssociationLine Name="_nextSituation" Type="Situation" FixedFromPoint="true">
+    <AssociationLine Name="NextSituation" Type="Situation" FixedFromPoint="true">
       <Path>
         <Point X="19.25" Y="4.688" />
         <Point X="17.5" Y="4.688" />
@@ -202,11 +204,11 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAABAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Choice.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_nextSituation" />
+      <Field Name="NextSituation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Scenario">
@@ -253,7 +255,7 @@
         <Position X="-0.981" Y="0.317" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="_choices" Type="Choice" FixedToPoint="true">
+    <AssociationLine Name="Choices" Type="Choice" FixedToPoint="true">
       <Path>
         <Point X="17.5" Y="4.938" />
         <Point X="19.25" Y="4.938" />
@@ -263,14 +265,14 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAwAAAAAAAAgBAAAAgAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAwAAAABAAAABAAAAgCAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Situation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="NextSituation" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Field Name="_choices" />
+      <Field Name="Choices" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SituationSimulation">
@@ -283,7 +285,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAIAAAIAAAAABE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAIAAAAAQAAABE=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Simulation\SituationSimulation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
