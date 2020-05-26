@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: Le coucher
+  m_EditorClassIdentifier: 
+  description: "Comme tous les soirs aux alentours de 22h30, L\xE9onard s\u2019appr\xEAtait
+    \xE0 aller se coucher. Comme tous les soirs avec la boule au ventre. De peur,
+    ces intestins s\u2019\xE9taient mis \xE0 lui faire mal ces derni\xE8res semaines.
+    \r\n-\tVoil\xE0 qui ne va pas arranger les choses, songea-t-il avec d\xE9pit,
+    encore une nuit de merde en perspective\u2026\r\nC\u2019est que comme presque
+    toutes les nuits, L\xE9onard allait sans doute une fois encore faire un cauchemar
+    qui allait au final le r\xE9veiller en sursaut \r\n-\tUn seul si j\u2019ai de
+    la chance\u2026\r\nSa s\u0153ur qui habitait Paris \xE9tait moins chanceuse. Elle
+    en faisait syst\xE9matiquement trois ou quatre par nuit. Pas \xE9tonnant que la
+    d\xE9pression lui soit tomb\xE9 dessus le mois dernier. C\u2019est un voisin de
+    palier de sa s\u0153ur qui l\u2019avait r\xE9veill\xE9 en pleine nuit pour lui
+    annoncer qu\u2019elle allait \xEAtre hospitalis\xE9e. Elle venait de faire une
+    tentative de suicide. L\xE9onard s\u2019\xE9tait aussit\xF4t rendu \xE0 la capitale.
+    Il venait de rentrer chez lui en Bretagne.\r\nM\xEAme si L\xE9onard avait \xE9t\xE9
+    le pire d\xE9tective du monde, il aurait quand m\xEAme devin\xE9 que ses douleurs
+    \xE0 l\u2019intestin \xE9taient li\xE9es \xE0 la nouvelle de la tentative de suicide
+    de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
+    le pire d\xE9tective du monde.\r"
+  situationType: 1
+  nextSituation: {fileID: 0}
+  choices:
+  - {fileID: 11400000, guid: b3c304e6d47ea884095aeaa6fd84b30c, type: 2}
+  - {fileID: 11400000, guid: 42bd5c9118860a14c80693756ef6941c, type: 2}
+  - {fileID: 11400000, guid: 42bd5c9118860a14c80693756ef6941c, type: 2}
+  format:
+    fontName: Arial.ttf
+    size: 14
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    backColor: {r: 0, g: 0, b: 0, a: 1}
+    style: 0
