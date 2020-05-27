@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61e5b0c7d17819647a692046f1affde0, type: 3}
-  m_Name: Go
+  m_Script: {fileID: 11500000, guid: 0a25cae83b277d144a3c32855fdc283a, type: 3}
+  m_Name: SecondChoiceTextFormat
   m_EditorClassIdentifier: 
-  keyWord: go
+  font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
+  size: 14
+  textColor: {r: 1, g: 0, b: 0, a: 1}
+  backColor: {r: 1, g: 1, b: 1, a: 1}
+  style: 0

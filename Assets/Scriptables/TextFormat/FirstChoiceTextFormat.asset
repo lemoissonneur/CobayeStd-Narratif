@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a25cae83b277d144a3c32855fdc283a, type: 3}
-  m_Name: DefaultSituationTextFormat
+  m_Name: FirstChoiceTextFormat
   m_EditorClassIdentifier: 
   font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
   size: 14
-  textColor: {r: 0, g: 0, b: 0, a: 1}
+  textColor: {r: 0.4392157, g: 0.6784314, b: 0.2784314, a: 1}
   backColor: {r: 1, g: 1, b: 1, a: 1}
   style: 0

@@ -77,7 +77,7 @@ public class SituationEditor : Editor
         EditorGUI.indentLevel++;
         EditorGUILayout.PropertyField(_situationTypeProperty);
         EditorGUILayout.PropertyField(_descriptionProperty);
-        EditorGUILayout.PropertyField(_formatProperty, true);
+        EditorGUILayout.PropertyField(_formatProperty);
         EditorGUI.indentLevel--;
         EditorGUILayout.EndVertical();
     }
@@ -187,12 +187,12 @@ public class SituationEditor : Editor
         Choice newChoice = ChoiceEditor.CreateChoice(name);
 
         Undo.RecordObject(newChoice, "Created new Choice");
-
         AssetDatabase.AddObjectToAsset(newChoice, _situation);
         AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(newChoice));
         ArrayUtility.Add(ref _situation.Choices, newChoice);
-        EditorUtility.SetDirty(_situation);
-        //SetChoiceNames();
+        //EditorUtility.SetDirty(_situation);
+
+        _choicesProperty = serializedObject.FindProperty(situationPropChoices);
     }
 
     private void RemoveChoice(Choice choice)
@@ -201,13 +201,9 @@ public class SituationEditor : Editor
         ArrayUtility.Remove(ref _situation.Choices, choice);
         DestroyImmediate(choice, true);
         AssetDatabase.SaveAssets();
-        EditorUtility.SetDirty(_situation);
-        //SetChoiceNames();
-    }
+        //EditorUtility.SetDirty(_situation);
 
-    private void SetChoicesName()
-    {
-
+        _choicesProperty = serializedObject.FindProperty(situationPropChoices);
     }
 
     public Choice TryGetChoiceAt(int index)

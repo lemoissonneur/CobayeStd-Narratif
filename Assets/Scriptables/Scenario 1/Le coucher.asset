@@ -35,9 +35,11 @@ MonoBehaviour:
     le pire d\xE9tective du monde.\r"
   NextSituation: {fileID: 0}
   Choices:
-  - {fileID: 114385487555190936}
+  - {fileID: 114515659844830752}
+  - {fileID: 114976527496954854}
+  - {fileID: 114036202516249382}
   Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
---- !u!114 &114385487555190936
+--- !u!114 &114036202516249382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,8 +49,93 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
-  m_Name: New Choice
+  m_Name: "R\xEAve tranquille"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va avoir de la chance."
+  Description: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver au coll\xE8ge
+    qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es. Devant la
+    salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e, l\u2019attendaient
+    ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas mal ton
+    nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement dans
+    les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
+    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
+    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
+    (Hein ?? L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
+    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
+    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
+    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
+    se r\xE9veilla en sursaut et en sueur, une question se figea aussit\xF4t dans
+    son esprit : pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ces deux
+    cons d\xE9j\xE0 ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage
+    pris en largeur qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un
+    type qui avait mis moins d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le
+    sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
+    fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
+    marrer de mon pyjama rose\u2026\r"
+  Format: {fileID: 11400000, guid: 9bff452bb76363b4c82f91476d807c8b, type: 2}
+  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
+--- !u!114 &114515659844830752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve chien enrag\xE9"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver d\u2019un chien qui le poursuit."
+  Description: "Le sommeil s\u2019empara rapidement de L\xE9onard. Il avait fait r\xE9cemment
+    l\u2019acquisition d\u2019un sommier neuf et haut de gamme. Dans l\u2019espoir
+    que gr\xE2ce \xE0 ce dernier, il ferait moins de cauchemars. Ou qu\u2019au pire,
+    c\u2019est dernier seraient plus agr\xE9ables\u2026 Rat\xE9, on n\u2019arr\xEAte
+    pas la crise onirique avec un sommier, f\xFBt-il d\u2019excellente qualit\xE9.\r\nAu
+    moins, il aura essay\xE9\u2026\r\nCette nuit donc, il r\xEAva qu\u2019il courait
+    dans une rue du lotissement de la ville o\xF9 il avait grandi. Il \xE9tait redevenu
+    un enfant. Il \xE9tait aussi paniqu\xE9 et en sueur. Il \xE9tait poursuivi par
+    le terrible cocker de ses voisins. Bien d\xE9cid\xE9 \xE0 le mordre. Tout le voisinage
+    se rassemblait petit \xE0 petit pour assister \xE0 cette course-poursuite qui
+    n\u2019en finissait pas. Mais au lieu de chercher \xE0 l\u2019aider, les voisins
+    trouvaient plus amusant de se moquer de lui, et de le pointer du doigt.\r\nFinalement,
+    il sentit les dents du canid\xE9 serrer puissamment son talon gauche. Ce qui eut
+    pour effet de r\xE9veiller un L\xE9onard en sueur. A tel point qu\u2019on aurait
+    pu croire qu\u2019il avait r\xE9ellement couru.\r"
+  Format: {fileID: 11400000, guid: 7bec5135176698f4c80abe8351fdb497, type: 2}
+  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
+--- !u!114 &114976527496954854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve \xE9cole en pyjama"
   m_EditorClassIdentifier: 
   KeyString: 
-  Description: 
-  NextSituation: {fileID: 0}
+  Description: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver au coll\xE8ge
+    qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es. Devant la
+    salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e, l\u2019attendaient
+    ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas mal ton
+    nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement dans
+    les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
+    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
+    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
+    (Hein ?? L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
+    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
+    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
+    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
+    se r\xE9veilla en sursaut et en sueur, une question se figea aussit\xF4t dans
+    son esprit : pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ces deux
+    cons d\xE9j\xE0 ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage
+    pris en largeur qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un
+    type qui avait mis moins d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le
+    sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
+    fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
+    marrer de mon pyjama rose\u2026\r"
+  Format: {fileID: 11400000, guid: e831eab3b2bcf0645bc71c6c00395061, type: 2}
+  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

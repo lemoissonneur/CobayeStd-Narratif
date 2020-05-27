@@ -9,6 +9,6 @@ public class Choice : ScriptableObject
     public string KeyString;
     [TextArea]
     public string Description;
+    public TextFormatSettings Format;
     public Situation NextSituation;
-    public GUILayout Layout;
 }
