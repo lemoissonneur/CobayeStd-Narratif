@@ -5,7 +5,7 @@
     <AssociationLine Name="_choice" Type="Choice" FixedFromPoint="true">
       <Path>
         <Point X="20.125" Y="7.5" />
-        <Point X="20.125" Y="6.675" />
+        <Point X="20.125" Y="6.925" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.837" Y="0.213" />
@@ -35,7 +35,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAEIAACIQAAAAQAAoKAACAAEEIAAAAAEAQBAACAA=</HashCode>
+      <HashCode>AAAAAEIAACIQAAAQQAAoKAACAAEEIAAAAAEAQBAACAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Editor\SituationEditor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -54,8 +54,8 @@
     <AssociationLine Name="_situationLogic" Type="SituationLogic" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="0.688" Y="5.199" />
-        <Point X="0.688" Y="9.866" />
-        <Point X="8.75" Y="9.866" />
+        <Point X="0.688" Y="10.125" />
+        <Point X="8.75" Y="10.125" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -71,7 +71,7 @@
     <Position X="8.75" Y="8.25" Width="6" />
     <AssociationLine Name="_situationInterface" Type="ISituationInterface">
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="-1.138" Y="-1.288" Height="0.182" Width="1.504" />
+        <Position X="1.018" Y="1.639" Height="0.182" Width="1.504" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="_sitationSimulation" Type="SituationSimulation">
@@ -86,7 +86,7 @@
         <Point X="15.688" Y="6.827" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.461" Y="2.381" />
+        <Position X="-0.471" Y="1.912" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -190,11 +190,11 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Choice">
-    <Position X="19.25" Y="5.25" Width="2" />
+    <Position X="19.25" Y="5.5" Width="2" />
     <AssociationLine Name="NextSituation" Type="Situation" FixedFromPoint="true">
       <Path>
-        <Point X="19.25" Y="5.688" />
-        <Point X="17.5" Y="5.688" />
+        <Point X="19.25" Y="5.938" />
+        <Point X="17.5" Y="5.938" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.494" Y="0.059" />
@@ -249,13 +249,13 @@
         <Point X="16.875" Y="2.75" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.981" Y="0.317" />
+        <Position X="-1.054" Y="0.463" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="Choices" Type="Choice" FixedToPoint="true">
       <Path>
-        <Point X="17.5" Y="5.938" />
-        <Point X="19.25" Y="5.938" />
+        <Point X="17.5" Y="6.188" />
+        <Point X="19.25" Y="6.188" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
         <Position X="-0.01" Y="-0.285" Height="0.182" Width="1.493" />
@@ -278,9 +278,7 @@
       <Path>
         <Point X="13.156" Y="5.25" />
         <Point X="13.156" Y="5" />
-        <Point X="14.25" Y="5" />
-        <Point X="14.25" Y="5.14" />
-        <Point X="14.75" Y="5.14" />
+        <Point X="14.75" Y="5" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -306,7 +304,7 @@
         <Point X="16.812" Y="6.827" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.817" Y="3.085" />
+        <Position X="-1.235" Y="0.168" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>

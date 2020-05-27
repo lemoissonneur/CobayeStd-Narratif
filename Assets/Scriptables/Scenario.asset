@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e72b724b1425b4fa83466cc70eb155, type: 3}
   m_Name: Scenario
   m_EditorClassIdentifier: 
-  situations:
+  _situations:
   - {fileID: 11400000, guid: c0435b8476683ea40baaee1c804ae91b, type: 2}
+  - {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
+  - {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}

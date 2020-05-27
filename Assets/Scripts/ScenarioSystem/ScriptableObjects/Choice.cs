@@ -8,6 +8,7 @@ public class Choice : ScriptableObject
 {
     public string KeyString;
     [TextArea]
-    public string ChoiceDescription;
+    public string Description;
     public Situation NextSituation;
+    public GUILayout Layout;
 }

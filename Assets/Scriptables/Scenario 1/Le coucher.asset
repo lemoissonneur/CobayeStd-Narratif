@@ -34,10 +34,21 @@ MonoBehaviour:
     de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
     le pire d\xE9tective du monde.\r"
   NextSituation: {fileID: 0}
-  Choices: []
-  Format:
-    font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
-    size: 11
-    textColor: {r: 0, g: 0, b: 0, a: 1}
-    backColor: {r: 1, g: 1, b: 1, a: 1}
-    style: 0
+  Choices:
+  - {fileID: 114385487555190936}
+  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
+--- !u!114 &114385487555190936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: 
+  Description: 
+  NextSituation: {fileID: 0}

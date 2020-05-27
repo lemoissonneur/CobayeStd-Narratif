@@ -20,9 +20,4 @@ MonoBehaviour:
     nous parlons de crise onirique."
   NextSituation: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
   Choices: []
-  Format:
-    font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
-    size: 11
-    textColor: {r: 0, g: 0, b: 0, a: 1}
-    backColor: {r: 1, g: 1, b: 1, a: 1}
-    style: 0
+  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}

@@ -13,20 +13,11 @@ public class Situation : ScriptableObject
     public Situation NextSituation;
     public Choice[] Choices;
 
+    public GUILayout Layout;
     public TextFormatSettings Format;
 
-    [Serializable]
-    public struct TextFormatSettings
-    {
-        public Font font;
-        public int size;
-        public Color textColor;
-        public Color backColor;
-        public FontStyle style;
-    };
-
     // default values
-    public static readonly uint NewNodeCharSize = 1000;
+    /*public static readonly uint NewNodeCharSize = 1000;
     internal static readonly TextFormatSettings defaultTextFormat = new TextFormatSettings()
     {
         //fontName = new Fon"Arial.ttf",
@@ -34,7 +25,7 @@ public class Situation : ScriptableObject
         textColor = Color.white,
         backColor = Color.black,
         style = FontStyle.Normal
-    };
+    };*/
 
     internal void AddChoice()
     {

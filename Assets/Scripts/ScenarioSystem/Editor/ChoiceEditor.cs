@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEditor;
 
 [CustomEditor(typeof(Choice))]
 public class ChoiceEditor : Editor
@@ -16,13 +13,24 @@ public class ChoiceEditor : Editor
         {
             DestroyImmediate(this);
             return;
-        }
-
-        
+        }        
     }
 
     public override void OnInspectorGUI()
     {
+        EditorGUILayout.BeginVertical();
+
+        //EditorGUILayout.PropertyField();
         base.OnInspectorGUI();
+
+        EditorGUILayout.EndVertical();
+
+    }
+
+    public static Choice CreateChoice(string name)
+    {
+        Choice newChoice = CreateInstance<Choice>();
+        newChoice.name = name;
+        return newChoice;
     }
 }
