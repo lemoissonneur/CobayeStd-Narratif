@@ -60,6 +60,8 @@ public class ScenarioEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        serializedObject.Update();
+
         EditorGUILayout.BeginVertical(GUI.skin.box);
         EditorGUILayout.LabelField("Situations", EditorStyles.boldLabel);
         EditorGUI.indentLevel++;
@@ -78,7 +80,7 @@ public class ScenarioEditor : Editor
         {
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
             EditorGUI.indentLevel++;
-            
+
             EditorGUILayout.PropertyField(_situationsProperty.GetArrayElementAtIndex(i), new GUIContent("Situation n°" + (i + 1).ToString()));
             if (GUILayout.Button("-"))
             {
@@ -98,6 +100,8 @@ public class ScenarioEditor : Editor
         EditorGUILayout.EndHorizontal();
         EditorGUI.indentLevel--;
         EditorGUILayout.EndVertical();
+
+        serializedObject.ApplyModifiedProperties();
     }
 
     private void AddSituation(string name)

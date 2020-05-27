@@ -1169,7 +1169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc971db2e9c462e4bbd4d6458c001ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingSituation: {fileID: 11400000, guid: c0435b8476683ea40baaee1c804ae91b, type: 2}
+  StartingSituation: {fileID: 114789637976749768, guid: 0f1bac5222b7bdb4080f01c3d5ec6d0d,
+    type: 2}
   SituationText: {fileID: 1776789439}
   PlayerChoice: {fileID: 1609545497}
   InputActions:
@@ -1421,10 +1422,10 @@ RectTransform:
   m_Father: {fileID: 240171498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 896, y: -13.5}
-  m_SizeDelta: {x: 1792, y: 27}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1792, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776789439
 MonoBehaviour:

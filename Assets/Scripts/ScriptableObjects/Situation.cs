@@ -2,7 +2,6 @@
 using UnityEngine;
 
 [Serializable]
-[CreateAssetMenu(fileName = "Situation", menuName = "Scenario/Situation", order = 1)]
 public class Situation : ScriptableObject
 {
     public enum SituationType { TextOnly, TextInteractive };

@@ -9,37 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
-  m_Name: Le coucher
+  m_Script: {fileID: 11500000, guid: 98e72b724b1425b4fa83466cc70eb155, type: 3}
+  m_Name: Scenario 1
   m_EditorClassIdentifier: 
-  Type: 1
-  Description: "Comme tous les soirs aux alentours de 22h30, L\xE9onard s\u2019appr\xEAtait
-    \xE0 aller se coucher. Comme tous les soirs, la peur au ventre. \xC0 cause de
-    cette peur qui revenait sans cesse, ses intestins \xE9taient m\xEAme devenus douloureux
-    ces derni\xE8res semaines. \r\n-\tVoil\xE0 qui ne va pas arranger les choses,
-    songea-t-il avec d\xE9pit, encore une nuit de merde en perspective\u2026\r\nPresque
-    toutes les nuits, L\xE9onard allait sans doute une fois encore faire un cauchemar
-    qui allait immanquablement le r\xE9veiller en sursaut \r\n-\tUn seul si j\u2019ai
-    de la chance\u2026\r\nSa s\u0153ur, L\xE9ana, avait \xE9t\xE9 moins chanceuse.
-    Apr\xE8s plusieurs mois \xE0 faire trois ou quatre cauchemars par nuit. Une lourde
-    fatigue s\u2019\xE9tait empar\xE9e d\u2019elle. Fatigue qui se changea en d\xE9pression.
-    C\u2019\xE9tait un voisin de palier de L\xE9ana qui s\u2019\xE9tait charg\xE9
-    de r\xE9veiller L\xE9onard pout lui annoncer qu\u2019elle allait \xEAtre hospitalis\xE9e.
-    Elle venait de faire une tentative de suicide. L\xE9onard s\u2019\xE9tait aussit\xF4t
-    rendu \xE0 la capitale. \r\nIl passa un mois entier au chevet de sa s\u0153ur.
-    D\u2019abord \xE0 l\u2019h\xF4pital, puis chez elle directement.\r\nIl venait
-    de rentrer chez lui en Bretagne.\r\nM\xEAme si L\xE9onard avait \xE9t\xE9 le pire
-    d\xE9tective du monde, il aurait quand m\xEAme devin\xE9 que ses douleurs \xE0
-    l\u2019intestin \xE9taient li\xE9es \xE0 la nouvelle de la tentative de suicide
-    de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
-    le pire d\xE9tective du monde.\r"
-  NextSituation: {fileID: 0}
-  Choices:
-  - {fileID: 114515659844830752}
-  - {fileID: 114976527496954854}
-  - {fileID: 114036202516249382}
-  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
---- !u!114 &114036202516249382
+  Situations:
+  - {fileID: 114789637976749768}
+  - {fileID: 114830471890833430}
+  - {fileID: 114322240428872572}
+--- !u!114 &114060116283670794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,9 +49,134 @@ MonoBehaviour:
     sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
     fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
     marrer de mon pyjama rose\u2026\r"
+  Format: {fileID: 11400000, guid: e831eab3b2bcf0645bc71c6c00395061, type: 2}
+  NextSituation: {fileID: 114322240428872572}
+--- !u!114 &114322240428872572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "Le r\xE9veil"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Sale nuit quoi qu\u2019il en soit\u2026.\r\n\r\nL\xE9onard n\u2019avait
+    aucune id\xE9e de l\u2019heure qu\u2019il \xE9tait lorsqu\u2019il se d\xE9cida
+    enfin \xE0 sortir du lit. Plus de r\xE9veil, depuis qu\u2019il avait cass\xE9
+    il y a deux mois en lui tombant dessus lors d\u2019un \xE9ni\xE8me cauchemar.
+    Les lourds volets en bois \xE9taient totalement rabattus et emp\xEAchait le moindre
+    rayon de soleil de p\xE9n\xE9trer \xE0 l\u2019int\xE9rieur de sa chambre. \r\nIl
+    n\u2019y avait que deux sources de lumi\xE8res\u2026 celle de son t\xE9l\xE9phone
+    portable qui indiquait qu\u2019il avait un appel manqu\xE9. Et celle de l\u2019\xE9cran
+    de son ordinateur portable. Celui-ci \xE9tait rest\xE9 en veille sur son bureau.
+    L\xE9onard l\u2019avait programm\xE9 pour chaque mail arrivant sur sa messagerie
+    professionnelle sorte l\u2019\xE9cran de sa torpeur. L\u2019\xE9cran \xE9tait
+    allum\xE9, il indiquait un message encore non ouvert re\xE7u \xE0 13h21... au
+    moins il avait l'heure \xE0 pr\xE9sent.\r"
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
+--- !u!114 &114789637976749768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: La crise onirique
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "La v\xE9ritable crise a fini par arriver\u2026 et finalement, elle
+    n\u2019aura \xE9t\xE9 ni \xE9conomique, ni sociale, ni \xE9cologique et encore
+    moins sanitaire. Il s\u2019agit d\u2019une crise onirique. C\u2019est en tous
+    cas le nom que les m\xE9dias lui ont donn\xE9. Depuis quatre ans \xE0 pr\xE9sent,
+    nous parlons de crise onirique."
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
+--- !u!114 &114830471890833430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: Le coucher
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "Comme tous les soirs aux alentours de 22h30, L\xE9onard s\u2019appr\xEAtait
+    \xE0 aller se coucher. Comme tous les soirs, la peur au ventre. \xC0 cause de
+    cette peur qui revenait sans cesse, ses intestins \xE9taient m\xEAme devenus douloureux
+    ces derni\xE8res semaines. \r\n-\tVoil\xE0 qui ne va pas arranger les choses,
+    songea-t-il avec d\xE9pit, encore une nuit de merde en perspective\u2026\r\nPresque
+    toutes les nuits, L\xE9onard allait sans doute une fois encore faire un cauchemar
+    qui allait immanquablement le r\xE9veiller en sursaut \r\n-\tUn seul si j\u2019ai
+    de la chance\u2026\r\nSa s\u0153ur, L\xE9ana, avait \xE9t\xE9 moins chanceuse.
+    Apr\xE8s plusieurs mois \xE0 faire trois ou quatre cauchemars par nuit. Une lourde
+    fatigue s\u2019\xE9tait empar\xE9e d\u2019elle. Fatigue qui se changea en d\xE9pression.
+    C\u2019\xE9tait un voisin de palier de L\xE9ana qui s\u2019\xE9tait charg\xE9
+    de r\xE9veiller L\xE9onard pout lui annoncer qu\u2019elle allait \xEAtre hospitalis\xE9e.
+    Elle venait de faire une tentative de suicide. L\xE9onard s\u2019\xE9tait aussit\xF4t
+    rendu \xE0 la capitale. \r\nIl passa un mois entier au chevet de sa s\u0153ur.
+    D\u2019abord \xE0 l\u2019h\xF4pital, puis chez elle directement.\r\nIl venait
+    de rentrer chez lui en Bretagne.\r\nM\xEAme si L\xE9onard avait \xE9t\xE9 le pire
+    d\xE9tective du monde, il aurait quand m\xEAme devin\xE9 que ses douleurs \xE0
+    l\u2019intestin \xE9taient li\xE9es \xE0 la nouvelle de la tentative de suicide
+    de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
+    le pire d\xE9tective du monde.\r"
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114947278182799326}
+  - {fileID: 114060116283670794}
+  - {fileID: 114924581600710334}
+  Format: {fileID: 11400000, guid: af9cfbcd7db58734db10b9611edb3486, type: 2}
+--- !u!114 &114924581600710334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "R\xEAve \xE9cole en pyjama"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver qu\u2019il arrive au coll\xE8ge en
+    pyjama."
+  Description: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver au coll\xE8ge
+    qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es. Devant la
+    salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e, l\u2019attendaient
+    ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas mal ton
+    nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement dans
+    les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
+    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
+    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
+    (Hein ?? L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
+    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
+    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
+    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
+    se r\xE9veilla en sursaut et en sueur, une question se figea aussit\xF4t dans
+    son esprit : pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ces deux
+    cons d\xE9j\xE0 ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage
+    pris en largeur qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un
+    type qui avait mis moins d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le
+    sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
+    fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
+    marrer de mon pyjama rose\u2026\r"
   Format: {fileID: 11400000, guid: 9bff452bb76363b4c82f91476d807c8b, type: 2}
-  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
---- !u!114 &114515659844830752
+  NextSituation: {fileID: 114322240428872572}
+--- !u!114 &114947278182799326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,39 +205,4 @@ MonoBehaviour:
     pour effet de r\xE9veiller un L\xE9onard en sueur. A tel point qu\u2019on aurait
     pu croire qu\u2019il avait r\xE9ellement couru.\r"
   Format: {fileID: 11400000, guid: 7bec5135176698f4c80abe8351fdb497, type: 2}
-  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
---- !u!114 &114976527496954854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
-  m_Name: "R\xEAve \xE9cole en pyjama"
-  m_EditorClassIdentifier: 
-  KeyString: 
-  Description: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver au coll\xE8ge
-    qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es. Devant la
-    salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e, l\u2019attendaient
-    ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas mal ton
-    nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement dans
-    les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
-    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
-    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
-    (Hein ?? L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
-    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
-    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
-    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
-    se r\xE9veilla en sursaut et en sueur, une question se figea aussit\xF4t dans
-    son esprit : pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ces deux
-    cons d\xE9j\xE0 ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage
-    pris en largeur qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un
-    type qui avait mis moins d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le
-    sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
-    fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
-    marrer de mon pyjama rose\u2026\r"
-  Format: {fileID: 11400000, guid: e831eab3b2bcf0645bc71c6c00395061, type: 2}
-  NextSituation: {fileID: 11400000, guid: 943d9140882be9f41b65888544c720ed, type: 2}
+  NextSituation: {fileID: 114322240428872572}

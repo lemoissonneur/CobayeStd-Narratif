@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Scenario", menuName = "Scenario/Scenario", order = 1)]
+[CreateAssetMenu(fileName = "Scenario", menuName = "Scenario", order = 1)]
 [Serializable]
 public class Scenario : ScriptableObject
 {
