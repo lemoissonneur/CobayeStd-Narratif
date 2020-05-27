@@ -20,6 +20,8 @@ public class SituationEditor : Editor
     private const string situationPropNextSituation = "NextSituation";
     private const string situationPropChoices = "Choices";
 
+    internal Vector2 _scrollPos;
+
     private void OnEnable()
     {
         _situation = (Situation)target;
@@ -62,9 +64,22 @@ public class SituationEditor : Editor
     {
         EditorGUILayout.BeginVertical(GUI.skin.box);
         EditorGUILayout.LabelField("Preview", EditorStyles.boldLabel);
-        EditorGUI.indentLevel++;
-        //EditorGUILayout.TextArea();
-        EditorGUI.indentLevel--;
+
+        GUIStyle myTextArea = new GUIStyle(EditorStyles.textArea);
+        myTextArea.wordWrap = true;
+        myTextArea.font = _situation.Format.font;
+        myTextArea.fontSize = _situation.Format.size;
+        myTextArea.fontStyle = _situation.Format.style;
+        myTextArea.normal.textColor = _situation.Format.textColor;
+
+        Color defaultColor = GUI.backgroundColor;
+        GUI.backgroundColor = _situation.Format.backColor;
+
+        _scrollPos = EditorGUILayout.BeginScrollView(_scrollPos, false, false);
+        EditorGUILayout.SelectableLabel(_situation.Description, myTextArea, GUILayout.ExpandHeight(true));
+        EditorGUILayout.EndScrollView();
+        GUI.backgroundColor = defaultColor;
+
         EditorGUILayout.EndVertical();
     }
 

@@ -34,13 +34,10 @@ MonoBehaviour:
     de sa s\u0153ur. Les dates correspondaient\r\nEt L\xE9onard n\u2019\xE9tait pas
     le pire d\xE9tective du monde.\r"
   NextSituation: {fileID: 0}
-  _choices:
-  - {fileID: 11400000, guid: b3c304e6d47ea884095aeaa6fd84b30c, type: 2}
-  - {fileID: 11400000, guid: 31b256ded781d7f4b97cf1aa1ec8fb26, type: 2}
-  - {fileID: 11400000, guid: 42bd5c9118860a14c80693756ef6941c, type: 2}
+  Choices: []
   Format:
-    font: {fileID: 0}
-    size: 0
-    textColor: {r: 0, g: 0, b: 0, a: 0}
-    backColor: {r: 0, g: 0, b: 0, a: 0}
+    font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
+    size: 11
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    backColor: {r: 1, g: 1, b: 1, a: 1}
     style: 0

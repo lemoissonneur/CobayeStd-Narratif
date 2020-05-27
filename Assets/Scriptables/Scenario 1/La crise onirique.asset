@@ -22,7 +22,7 @@ MonoBehaviour:
   Choices: []
   Format:
     font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
-    size: 14
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    backColor: {r: 0, g: 0, b: 0, a: 0}
+    size: 11
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    backColor: {r: 1, g: 1, b: 1, a: 1}
     style: 0
