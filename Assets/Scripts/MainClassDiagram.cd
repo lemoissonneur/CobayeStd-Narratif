@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="ChoiceEditor">
-    <Position X="19.25" Y="6.5" Width="2" />
+    <Position X="19.25" Y="7.5" Width="2" />
     <AssociationLine Name="_choice" Type="Choice" FixedFromPoint="true">
       <Path>
-        <Point X="20.125" Y="6.5" />
-        <Point X="20.125" Y="5.675" />
+        <Point X="20.125" Y="7.5" />
+        <Point X="20.125" Y="6.675" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.837" Y="0.213" />
@@ -28,17 +28,14 @@
   </Class>
   <Class Name="SituationEditor">
     <Position X="18.5" Y="0.5" Width="3" />
-    <AssociationLine Name="_situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="_situation" Type="Situation" FixedToPoint="true">
       <Path>
-        <Point X="19.938" Y="4.108" />
-        <Point X="19.938" Y="4.123" />
-        <Point X="18.484" Y="4.123" />
-        <Point X="18.484" Y="4.062" />
-        <Point X="17.5" Y="4.062" />
+        <Point X="18.5" Y="4.25" />
+        <Point X="17.5" Y="4.25" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAEIAACIQAAAAQAAIKAACAAEAIAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAEIAACIQAAAAQAAoKAACAAEEIAAAAAEAQBAACAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\Editor\SituationEditor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -86,7 +83,7 @@
       <Path>
         <Point X="14.75" Y="8.625" />
         <Point X="15.688" Y="8.625" />
-        <Point X="15.688" Y="6.375" />
+        <Point X="15.688" Y="6.827" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-0.461" Y="2.381" />
@@ -193,11 +190,11 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Choice">
-    <Position X="19.25" Y="4.25" Width="2" />
+    <Position X="19.25" Y="5.25" Width="2" />
     <AssociationLine Name="NextSituation" Type="Situation" FixedFromPoint="true">
       <Path>
-        <Point X="19.25" Y="4.688" />
-        <Point X="17.5" Y="4.688" />
+        <Point X="19.25" Y="5.688" />
+        <Point X="17.5" Y="5.688" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.494" Y="0.059" />
@@ -245,8 +242,8 @@
     </NestedTypes>
     <AssociationLine Name="NextSituation" Type="Situation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="17.5" Y="3.313" />
-        <Point X="17.875" Y="3.313" />
+        <Point X="17.5" Y="3.383" />
+        <Point X="17.875" Y="3.383" />
         <Point X="17.875" Y="2.375" />
         <Point X="16.875" Y="2.375" />
         <Point X="16.875" Y="2.75" />
@@ -257,15 +254,15 @@
     </AssociationLine>
     <AssociationLine Name="Choices" Type="Choice" FixedToPoint="true">
       <Path>
-        <Point X="17.5" Y="4.938" />
-        <Point X="19.25" Y="4.938" />
+        <Point X="17.5" Y="5.938" />
+        <Point X="19.25" Y="5.938" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
         <Position X="-0.01" Y="-0.285" Height="0.182" Width="1.493" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAwAAAABAAAABAAAAgCAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAwAAAABAAAABAAAAgCAAAAAQAAAAEAAAA=</HashCode>
       <FileName>Assets\Scripts\ScenarioSystem\ScriptableObjects\Situation.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -280,8 +277,10 @@
     <AssociationLine Name="_situation" Type="Situation" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="13.156" Y="5.25" />
-        <Point X="13.156" Y="4.875" />
-        <Point X="14.75" Y="4.875" />
+        <Point X="13.156" Y="5" />
+        <Point X="14.25" Y="5" />
+        <Point X="14.25" Y="5.14" />
+        <Point X="14.75" Y="5.14" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -304,7 +303,7 @@
     <AssociationLine Name="CurrentSituation" Type="Situation" FixedToPoint="true">
       <Path>
         <Point X="16.812" Y="7.25" />
-        <Point X="16.812" Y="6.375" />
+        <Point X="16.812" Y="6.827" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.817" Y="3.085" />

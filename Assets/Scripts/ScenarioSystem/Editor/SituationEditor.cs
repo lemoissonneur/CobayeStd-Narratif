@@ -63,7 +63,7 @@ public class SituationEditor : Editor
         EditorGUILayout.BeginVertical(GUI.skin.box);
         EditorGUILayout.LabelField("Preview", EditorStyles.boldLabel);
         EditorGUI.indentLevel++;
-        EditorGUILayout.LabelField("ADU");
+        //EditorGUILayout.TextArea();
         EditorGUI.indentLevel--;
         EditorGUILayout.EndVertical();
     }
@@ -80,7 +80,7 @@ public class SituationEditor : Editor
                 break;
 
             case Situation.SituationType.TextOnly:
-                DisplaySituationHappening();
+                DisplayNextSituationHappening();
                 break;
 
             default:
@@ -94,7 +94,7 @@ public class SituationEditor : Editor
     {
         EditorGUILayout.PropertyField(_choicesProperty, true);
         _situation.NextSituation = null;
-
+        
         if(GUILayout.Button("Create New Choice"))
         {
             _situation.AddChoice();
@@ -104,6 +104,6 @@ public class SituationEditor : Editor
     private void DisplayNextSituationHappening()
     {
         EditorGUILayout.PropertyField(_nextSituationProperty);
-        _situation.Choices = null;
+        _situation.Choices = new Choice[0];
     }
 }

@@ -19,10 +19,10 @@ MonoBehaviour:
     cas le nom que les m\xE9dias lui ont donn\xE9. Depuis quatre ans \xE0 pr\xE9sent,
     nous parlons de crise onirique."
   NextSituation: {fileID: 11400000, guid: 61a5d17a6f5d7cb4baaaf72c5213b8c1, type: 2}
-  _choices: []
+  Choices: []
   Format:
-    font: {fileID: 0}
-    size: 0
-    textColor: {r: 0, g: 0, b: 0, a: 0}
+    font: {fileID: 12800000, guid: 8fe68e6e0ce1087489ba211f7639ea88, type: 3}
+    size: 14
+    textColor: {r: 1, g: 1, b: 1, a: 1}
     backColor: {r: 0, g: 0, b: 0, a: 0}
     style: 0

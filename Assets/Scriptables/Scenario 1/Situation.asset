@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
   m_Name: Situation
   m_EditorClassIdentifier: 
-  Type: 0
+  Type: 1
   Description: 
   NextSituation: {fileID: 0}
-  _choices: []
+  Choices: []
   Format:
     font: {fileID: 0}
     size: 0
