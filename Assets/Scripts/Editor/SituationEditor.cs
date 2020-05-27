@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -6,12 +7,14 @@ using UnityEngine;
 [CustomEditor(typeof(Situation))]
 public class SituationEditor : Editor
 {
+    private SerializedProperty _nameProperty;
     private SerializedProperty _situationTypeProperty;
     private SerializedProperty _descriptionProperty;
     private SerializedProperty _formatProperty;
     private SerializedProperty _nextSituationProperty;
     private SerializedProperty _choicesProperty;
 
+    private const string situationPropName = "m_Name";
     private const string situationPropSituationType = "Type";
     private const string situationPropDescription = "Description";
     private const string situationPropFormat = "Format";
@@ -34,6 +37,7 @@ public class SituationEditor : Editor
             return;
         }
 
+        _nameProperty = serializedObject.FindProperty(situationPropName);
         _situationTypeProperty = serializedObject.FindProperty(situationPropSituationType);
         _descriptionProperty = serializedObject.FindProperty(situationPropDescription);
         _formatProperty = serializedObject.FindProperty(situationPropFormat);
@@ -75,6 +79,7 @@ public class SituationEditor : Editor
         EditorGUILayout.BeginVertical(GUI.skin.box);
         EditorGUILayout.LabelField("Definition", EditorStyles.boldLabel);
         EditorGUI.indentLevel++;
+        EditorGUILayout.PropertyField(_nameProperty);
         EditorGUILayout.PropertyField(_situationTypeProperty);
         EditorGUILayout.PropertyField(_descriptionProperty);
         EditorGUILayout.PropertyField(_formatProperty);
@@ -109,6 +114,13 @@ public class SituationEditor : Editor
             EditorGUILayout.LabelField(new GUIContent("Please provide a text format to preview text."));
         }
         EditorGUILayout.EndVertical();
+    }
+
+    public static Situation CreateSituation(string name)
+    {
+        Situation newSituation = CreateInstance<Situation>();
+        newSituation.name = name;
+        return newSituation;
     }
 
     private void DisplaySituationHappening()

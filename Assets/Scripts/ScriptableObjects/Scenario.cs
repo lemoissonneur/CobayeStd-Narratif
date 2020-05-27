@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Scenario", menuName = "Scenario/Scenario", order = 1)]
-[System.Serializable]
+[Serializable]
 public class Scenario : ScriptableObject
 {
-    public Situation[] _situations;
+    public Situation[] Situations;
 }
