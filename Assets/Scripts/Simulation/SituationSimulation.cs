@@ -32,10 +32,10 @@ public class SituationSimulation
 
     private void UnpackChoicesInSituation()
     {
-        for (int i = 0; i < _situation._choices.Length; i++)
+        for (int i = 0; i < _situation.Choices.Length; i++)
         {
-            _choicesDictionnary.Add(_situation._choices[i].KeyString, _situation._choices[i]._nextSituation);
-            _interactionDescriptionsInSituation.Add(_situation._choices[i].ChoiceDescription);
+            _choicesDictionnary.Add(_situation.Choices[i].KeyString, _situation.Choices[i].NextSituation);
+            _interactionDescriptionsInSituation.Add(_situation.Choices[i].Description);
         }
     }
 

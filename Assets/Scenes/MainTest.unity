@@ -1173,7 +1173,7 @@ MonoBehaviour:
   SituationText: {fileID: 1776789439}
   PlayerChoice: {fileID: 1609545497}
   InputActions:
-  - {fileID: 11400000, guid: 33e2f01c8e5eb4b49b2eebfefd443b03, type: 2}
+  - {fileID: 11400000, guid: 9e263e4ef4af9df4aafda9bba597f1b5, type: 2}
 --- !u!222 &1496137234
 CanvasRenderer:
   m_ObjectHideFlags: 0
