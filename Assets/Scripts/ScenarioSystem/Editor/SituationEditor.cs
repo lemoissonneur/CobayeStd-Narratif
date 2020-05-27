@@ -136,6 +136,16 @@ public class SituationEditor : Editor
         EditorGUI.indentLevel++;
         _situation.NextSituation = null;
 
+        if(_choiceEditors.Length != TryGetChoicesLength())
+        {
+            foreach (var choiceEditor in _choiceEditors)
+            {
+                DestroyImmediate(choiceEditor);
+            }
+
+            CreateEditors();
+        }
+
         for (int i = 0 ; i < _situation.Choices.Length; i++)
         {
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
@@ -190,9 +200,7 @@ public class SituationEditor : Editor
         AssetDatabase.AddObjectToAsset(newChoice, _situation);
         AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(newChoice));
         ArrayUtility.Add(ref _situation.Choices, newChoice);
-        //EditorUtility.SetDirty(_situation);
-
-        _choicesProperty = serializedObject.FindProperty(situationPropChoices);
+        EditorUtility.SetDirty(_situation);
     }
 
     private void RemoveChoice(Choice choice)
@@ -201,23 +209,31 @@ public class SituationEditor : Editor
         ArrayUtility.Remove(ref _situation.Choices, choice);
         DestroyImmediate(choice, true);
         AssetDatabase.SaveAssets();
-        //EditorUtility.SetDirty(_situation);
-
-        _choicesProperty = serializedObject.FindProperty(situationPropChoices);
+        EditorUtility.SetDirty(_situation);
     }
 
     public Choice TryGetChoiceAt(int index)
     {
-        if(_situation.Choices == null || _situation.Choices[0] == null)
+        if (_situation.Choices == null || _situation.Choices[0] == null)
         {
             return null;
         }
 
-        if(index >= _situation.Choices.Length)
+        if (index >= _situation.Choices.Length)
         {
             return _situation.Choices[0];
         }
 
         return _situation.Choices[index];
+    }
+
+    public int TryGetChoicesLength()
+    {
+        if(_situation.Choices == null)
+        {
+            return 0;
+        }
+
+        return _situation.Choices.Length;
     }
 }
