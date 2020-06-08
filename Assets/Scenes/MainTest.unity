@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc971db2e9c462e4bbd4d6458c001ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingSituation: {fileID: 114789637976749768, guid: 0f1bac5222b7bdb4080f01c3d5ec6d0d,
+  StartingSituation: {fileID: 114718756168495304, guid: 8414efdbdb4fd9a4f843086f7b8d472f,
     type: 2}
   SituationText: {fileID: 1776789439}
   PlayerChoice: {fileID: 1609545497}

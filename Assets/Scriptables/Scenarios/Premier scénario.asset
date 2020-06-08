@@ -1,0 +1,1084 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e72b724b1425b4fa83466cc70eb155, type: 3}
+  m_Name: "Premier sc\xE9nario"
+  m_EditorClassIdentifier: 
+  Situations:
+  - {fileID: 114396727007348240}
+  - {fileID: 114718756168495304}
+  - {fileID: 114279019331104836}
+  - {fileID: 114125655037699612}
+  - {fileID: 114623393758983710}
+  - {fileID: 114113253468618822}
+  - {fileID: 114469082143376388}
+  - {fileID: 114195987996203730}
+  - {fileID: 114784565579994604}
+  - {fileID: 114783467908284238}
+  - {fileID: 114149634254593318}
+  - {fileID: 114142692949619060}
+  - {fileID: 114095170407038264}
+  - {fileID: 114290195667505936}
+  - {fileID: 114728520938394998}
+  - {fileID: 114578983688990686}
+  - {fileID: 114813548078234668}
+  - {fileID: 114528656475017176}
+  - {fileID: 114616067499683788}
+  - {fileID: 114465727126793062}
+--- !u!114 &114036408468850298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: Revenir au mail
+  m_EditorClassIdentifier: 
+  KeyString: Revenir au mail
+  Description: "Je ferais mieux de me concentrer sur le mail, pensa L\xE9onard. Apr\xE8s
+    tout, mon salaire \xE0 la fin du mois provient de clients qui ont le plus souvent
+    des choses \xE0 cacher, et les gens qui ont des choses \xE0 cacher (allez savoir
+    pourquoi) pr\xE9f\xE8re vous contacter par mail."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114469082143376388}
+--- !u!114 &114095170407038264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: texte provisoire 2
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: texte provisoire 2
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114472501450710532}
+  Format: {fileID: 0}
+--- !u!114 &114113253468618822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "L\xE9onard s'int\xE9resse \xE0 son portable"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "L\xE9onard s\u2019empara du t\xE9l\xE9phone. Un appel manqu\xE9 donc\u2026
+    Le num\xE9ro qui s\u2019affichait alors sur l\u2019\xE9cran \xE9tait totalement
+    inconnu de son r\xE9pertoire. Quant \xE0 sa m\xE9moire pour les num\xE9ros\u2026
+    mieux valait ne pas y penser.\r\nTout ce qu\u2019il pouvait dire pour l\u2019heure,
+    c\u2019\xE9tait que l\u2019on avait essay\xE9 de le joindre via un autre t\xE9l\xE9phone
+    portable car le num\xE9ro commen\xE7ait par un 06. Brillante d\xE9duction, mais
+    qui n\u2019allait pas le mener tr\xE8s loin\u2026"
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114120738778941160}
+  - {fileID: 114036408468850298}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114120738778941160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Rappeler le num\xE9ro"
+  m_EditorClassIdentifier: 
+  KeyString: "Rappeler le num\xE9ro"
+  Description: "Avait-il donn\xE9 des raisons \xE0 sa banque de se plaindre r\xE9cemment
+    ? Pas qu\u2019il s\u2019en souvienne\u2026 la police alors ? En mati\xE8re de
+    loi, certaines de ses derni\xE8res affaires l\u2019avait quelque peu pouss\xE9
+    \xE0 rouler sur la ligne continu. Mais la police avait-elle encore des effectifs
+    \xE0 accorder pour du menu fretin comme lui ? Non, \xE9videmment\u2026 sinon les
+    affaires n\u2019iraient pas aussi bien pour lui en ce moment. L\xE9onard d\xE9testait
+    plus que tout \xE9laborer des th\xE9ories tortueuses. Surtout avant 15h. Il a
+    un num\xE9ro. Il l\u2019appelle. Il est fix\xE9. Un plan parfait."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114195987996203730}
+--- !u!114 &114125655037699612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "Sale nuit quoi qu\u2019il en soit\u2026"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Sale nuit quoi qu\u2019il en soit\u2026"
+  NextSituation: {fileID: 114623393758983710}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114142692949619060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "Ce Denis Carquefou s\u2019adressait \xE0 lui en employant le terme de d\xE9tective\u2026
+    \xE9trange \xE7a\u2026"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Ce Denis Carquefou s\u2019adressait \xE0 lui en employant le terme
+    de d\xE9tective\u2026 \xE9trange \xE7a\u2026"
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114149634254593318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "r\xE9ponse provisoire 1"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "r\xE9ponse provisoire 1"
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114895550250729022}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114153043931025496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "un appel manqu\xE9 ?"
+  m_EditorClassIdentifier: 
+  KeyString: "Un appel manqu\xE9 ? Voil\xE0 qui est bizarre\u2026 sa famille n\u2019\xE9tait
+    pas du genre \xE0 prendre des nouvelles par t\xE9l\xE9phone\u2026"
+  Description: "Un appel manqu\xE9 ? Voil\xE0 qui est bizarre\u2026 sa famille n\u2019\xE9tait
+    pas du genre \xE0 prendre des nouvelles par t\xE9l\xE9phone\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114113253468618822}
+--- !u!114 &114195987996203730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "Le t\xE9l\xE9phone sonne"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Le t\xE9l\xE9phone sonna une dizaine de fois avant que le r\xE9pondeur
+    ne se fasse entendre.\r\nUne voix masculine se fit entendre. La voix \xE9tait
+    calme, s\xE9rieuse quoiqu\u2019un l\xE9ger enthousiasme restait perceptible. On
+    notait \xE9galement un petit rien de sensualit\xE9 dans cette derni\xE8re.\r\nCe
+    r\xE9pondeur avait \xE9t\xE9 visiblement travaill\xE9. Et le gars en question
+    devait bosser dans la communication ou la vente, estima L\xE9onard.\r\n\xAB Bonjour,
+    vous \xEAtes bien sur le t\xE9l\xE9phone portable priv\xE9 de Denis Carquefou.
+    Je ne suis h\xE9las pas disponible pour le moment. Mais vous pouvez laisser un
+    message apr\xE8s le bip sonore et je vous rappellerai le plus rapidement possible.\r\nBonne
+    journ\xE9e \xE0 vous \xBB.\r\n\u2026 d\xE9finitivement un commercial, trancha
+    int\xE9rieurement L\xE9onard.\r\nMais un commercial qu\u2019il l\u2019avait contact\xE9
+    avec son t\xE9l\xE9phone portable personnelle. Int\xE9ressant \xE7a. Le gars faisait
+    gratuitement des heures sup\u2019 chez lui ou bien\u2026"
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114226831970059698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: La vie personnelle de Carquefou
+  m_EditorClassIdentifier: 
+  KeyString: "La plupart de ses clients faisait appel \xE0 ses services pour des motifs
+    personnels\u2026 un petit tour sur les r\xE9seaux sociaux, c\u2019est la premi\xE8re
+    \xE9tape \xAB naturelle \xBB pour bien cerner son larron."
+  Description: "Plut\xF4t discret le gars\u2026 quelques pages le concernant sur certains
+    grands r\xE9seaux sociaux, ou professionnelles. Mais ces pages se ressemblaient
+    tellement, qu\u2019elles avaient sans doute \xE9t\xE9 produites \xE0 la chaine.
+    Ce Denis Carquefou n\u2019avait sans doute cherch\xE9 qu\u2019\xE0 se donner une
+    visibilit\xE9 au service de ses activit\xE9s professionnelles. \r\nEt en effet,
+    tous cela sentait bon la fa\xE7ade commer\xE7ante\u2026 constata L\xE9onard.\r\nIl
+    y avait des liens vers des pages professionnelles appartenant \xE0 ce Carquefou,
+    des informations basiques et un dernier lien vers son dipl\xF4me de master en
+    droit immobilier et de l\u2019habitat. Le caract\xE8re lisse et aseptis\xE9 de
+    toutes ces pages faillit faire manquer \xE0 L\xE9onard une information intrigante
+    dans la partie \xAB commentaires \xBB d\u2019une de ses pages\u2026\r\nLe commentaire
+    en question datait du 3 septembre, c\u2019\xE9tait il y a 4 jours :\r\n\xAB Courage
+    M.Carquefou, mes pens\xE9es sont pour vous en ces temps difficiles\u2026 \xBB\r\nLe
+    commentaire n\u2019avait pas \xE9t\xE9 \xAB lik\xE9 \xBB par Carquefou. Comme
+    la d\xE9cence voudrait qu\u2019il le soit. Cela signifiait que soit ce dernier
+    \xE9tait particuli\xE8rement insensible, soit qu\u2019il ne se rendait pas tous
+    les jours sur les r\xE9seaux sociaux. \r\n- Probablement la deuxi\xE8me option,
+    admis finalement L\xE9onard.\r\nUn malheur \xE9tait arriv\xE9 r\xE9cemment \xE0
+    ce Denis Carquefou. Un malheur qui justifierait que ce dernier face appel \xE0
+    un d\xE9tective ? Peut-\xEAtre bien\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114279019331104836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: premier texte
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "Comme tous les soirs aux alentours de 22h30, L\xE9onard s\u2019appr\xEAtait
+    \xE0 aller se coucher. Comme tous les soirs, la peur au ventre. \xC0 force d\u2019endurer
+    cette peur qui revenait sans cesse, ses intestins \xE9taient m\xEAme devenus douloureux
+    ces derni\xE8res semaines. \r\n-\tVoil\xE0 qui ne va pas arranger les choses,
+    songea-t-il avec d\xE9pit, encore une nuit de merde en perspective\u2026\r\nCette
+    nuit encore, L\xE9onard allait sans doute une fois encore faire un cauchemar qui
+    allait immanquablement le r\xE9veiller en sursaut \r\n-\tUn seul si j\u2019ai
+    de la chance\u2026\r\nSa s\u0153ur qui habitait Paris, L, avait \xE9t\xE9 moins
+    chanceuse. Apr\xE8s plusieurs mois \xE0 faire trois ou quatre cauchemars par nuit.
+    Une lourde fatigue s\u2019\xE9tait finalement empar\xE9e d\u2019elle. Fatigue
+    qui se transforma en d\xE9pression. C\u2019\xE9tait un voisin de palier de L\xE9ana
+    qui s\u2019\xE9tait charg\xE9 de r\xE9veiller L\xE9onard en pleine nuit pour lui
+    annoncer qu\u2019elle allait \xEAtre hospitalis\xE9e. Elle venait de faire une
+    tentative de suicide. L\xE9onard s\u2019\xE9tait aussit\xF4t rendu \xE0 la capitale.
+    \r\nIl passa un mois entier au chevet de sa s\u0153ur. D\u2019abord \xE0 l\u2019h\xF4pital,
+    puis chez elle directement.\r\nIl venait de rentrer chez lui en Bretagne.\r\nM\xEAme
+    si L\xE9onard avait \xE9t\xE9 le pire d\xE9tective du monde, il aurait quand m\xEAme
+    devin\xE9 que ses douleurs \xE0 l\u2019intestin \xE9taient li\xE9es \xE0 la nouvelle
+    de la tentative de suicide de sa s\u0153ur. Les dates correspondaient.\r\nEt L\xE9onard
+    n\u2019\xE9tait pas le pire d\xE9tective du monde."
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114607046187466808}
+  - {fileID: 114753737812155892}
+  - {fileID: 114342584018426562}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114290195667505936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: text provisoire 3
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: text provisoire 3
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114390246245123068}
+  - {fileID: 114673136497666066}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114305776980062766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: Il est temps de partir cette fois.
+  m_EditorClassIdentifier: 
+  KeyString: Il est temps de partir cette fois.
+  Description: "L\xE9onard se laissa tomber de tout son poids sur le dossier de son
+    si\xE8ge. Celui-ci \xE9mit un long grincement de protestation. Il avait besoin
+    de r\xE9fl\xE9chir et les grincements plaintifs faisant partie de ces sons qu\u2019il
+    affectionnait tant. Ils l\u2019accompagnaient dans sa r\xE9flexion. Tant pis pour
+    le si\xE8ge, un jour il l\xE2chera, L\xE9onard tombera \xE0 la renverse et \xE7a
+    sera bien fait pour lui.\r\nLa crise onirique avait largement augment\xE9 le nombre
+    d\u2019incivilit\xE9s et d\u2019actes de violence partout dans le monde. Bien
+    souvent, les riches en \xE9tant les premi\xE8res victimes. Surtout ceux qui avaient
+    des terres pour le montrer. Pas de d\xE9m\xE9l\xE9s avec la justice vraiment ?
+    hmm\u2026 est-ce qu\u2019il avait encore le temps pour passer quelques coups de
+    fils ? Les recherches avaient \xE9t\xE9 plus longues que pr\xE9vu. S\u2019il voulait
+    arriver \xE0 une heure convenable chez son futur client, il valait mieux se pr\xE9parer
+    d\xE8s maintenant. Et partir s\u2019en tarder\u2026"
+  Format: {fileID: 0}
+  NextSituation: {fileID: 0}
+--- !u!114 &114342584018426562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: pas de cauchemar
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va avoir de la chance"
+  Description: "C\u2019est l\u2019exception qui fait la r\xE8gle dit-on. L\xE9onard
+    trouvait ce proverbe stupide. Mais c\u2019est la premi\xE8re chose qui lui vint
+    \xE0 l\u2019esprit le lendemain apr\xE8s avoir dormi toute la nuit comme un loir.
+    Pas le moindre cauchemar \xE0 l\u2019horizon. De nos jours, mal dormir \xE9tait
+    la r\xE8gle. La nuit qui venait de se terminer \xE9tait une exception. Et le probl\xE8me
+    avec les exceptions\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114125655037699612}
+--- !u!114 &114353638917813634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Le caf\xE9 c\u2019est la vie"
+  m_EditorClassIdentifier: 
+  KeyString: "Le caf\xE9 c\u2019est la vie"
+  Description: "Le caf\xE9 est cher, mais les affaires allaient assez bien. Son m\xE9tier
+    de d\xE9tective n\u2019avait pas uniquement aiguis\xE9 sa curiosit\xE9, mais aussi
+    son flair. Et en ce moment m\xEAme, c\u2019\xE9tait lui qui parlait \xE0 l\u2019esprit
+    de L\xE9onard. \r\nSon flair lui disait : l\xE2che pas ce client, il y a une grosse
+    somme \xE0 la cl\xE9. Prendre un caf\xE9 maintenant, c\u2019\xE9tait l\u2019assurance
+    de para\xEEtre pr\xE9sentable et attentif lors de l\u2019entretien. Ce n\u2019\xE9tait
+    pas du gaspillage. C\u2019\xE9tait un investissement sur l\u2019avenir."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114358143619864276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Plus que temps de partir l\xE0\u2026"
+  m_EditorClassIdentifier: 
+  KeyString: "Plus que temps de partir l\xE0\u2026"
+  Description: "Voil\xE0 qui m\xE9riterait plus amples recherches. Un rapide coup
+    d\u2019\u0153il en bas \xE0 droite de l\u2019\xE9cran, il \xE9tait 15h45. Puisqu\u2019il
+    d\xE9sirait toujours arriver chez ce Carquefou \xE0 une heure convenable au regard
+    de monsieur tout-le-monde, c\u2019est-\xE0-dire avant 17h30, cela signifiait que
+    le temps de faire sa toilette et de prendre une douche, il devait laisser ses
+    recherches pour le moment. Il \xE9tait temps pour lui de partir. Sa curiosit\xE9
+    reviendrait le hanter plus tard. Elle revient toujours."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114390246245123068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Il est temps d\u2019y aller."
+  m_EditorClassIdentifier: 
+  KeyString: "Il est temps d\u2019y aller."
+  Description: "L\xE9onard se refusa pour le moment \xE0 surinterpr\xE9ter le mail
+    qu\u2019il avait sous les yeux. Un client r\xE9clamait son aide, poliment qui
+    plus est\u2026 c\u2019\xE9tait l\xE0 une raison suffisante pour lui rendre la
+    gr\xE2ce d\u2019une petite visite \xE0 domicile. Et puis c\u2019est si gentiment
+    demand\xE9\u2026 Le mail n\u2019annon\xE7ait aucune heure mais L\xE9onard \xE9tait
+    lui aussi un homme de savoir-vivre. N\u2019importe quelle heure, \xE7a veut dire
+    en g\xE9n\xE9ral \xAB dans l\u2019apr\xE8s-midi avant 17h \xBB. Il \xE9tait donc
+    temps de se mettre sur le d\xE9part."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114396727007348240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "La v\xE9ritable crise est bien pr\xE9sente d\xE9sormais\u2026 et finalement,
+    elle n\u2019aura \xE9t\xE9 ni \xE9conomique, ni sociale, ni \xE9cologique et encore
+    moins bact\xE9riologique. Il s\u2019agit d\u2019une crise onirique. C\u2019est
+    en tous cas le nom que les m\xE9dias lui ont donn\xE9. Depuis quatre ans \xE0
+    pr\xE9sent, c\u2019est l\u2019ensemble de l\u2019humanit\xE9 qui parle de crise
+    onirique."
+  NextSituation: {fileID: 114718756168495304}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114443221340777978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: la vie professionnelle de Carquefou
+  m_EditorClassIdentifier: 
+  KeyString: "Bon il fait quoi ce Denis Carquefou dans la vie ? \xE7a me dira au moins
+    quel genre de paie je peux esp\xE9rer d\u2019une affaire avec lui."
+  Description: "Il ne suffit \xE0 L\xE9onard qu\u2019une dizaine de minutes pour se
+    faire \xAB une opinion solide mais appel\xE9 \xE0 s\u2019affiner avec le temps
+    \xBB sur ce Denis Carquefou. \r\n- Prometteur\u2026 \r\nComme le disait la chanson,
+    Denis Carquefou \xE9tait riche, tr\xE8s riche, il est dans l\u2019immobilier.
+    Propri\xE9taire terrien. Plus impressionnant encore, la majeure partie de sa fortune
+    ne semblait pas provenir d\u2019un quelconque h\xE9ritage. Cet homme s\u2019\xE9tait
+    fait tout seul\u2026pas mal du tout. Surtout pour un gars de 37 ans. \r\nCerise
+    sur le g\xE2teau, il semblerait qu\u2019il n\u2019ait que peu profiter des opportunit\xE9s
+    de la crise onirique pour s\u2019enrichir. Aucun dossier judiciaire. Aucun d\xE9m\xEAl\xE9
+    avec la justice le concernant n\u2019a filtr\xE9 dans la presse. Ou bien ce gars
+    est particuli\xE8rement discret, ou bien il est juste talentueux. \r\nSes propri\xE9t\xE9s
+    vont de maisons de campagne en Bretagne, en Normandie et en Mayenne. Jusqu\u2019\xE0
+    des terres agricoles et viticoles en Bourgogne. Put***, il est m\xEAme propri\xE9taire
+    des champs M\xE9dicourt dont le vin a remport\xE9 il y a deux ans le mondial D\xE9vinot.
+    L\u2019ann\xE9e derni\xE8re, ce m\xEAme vin a termin\xE9 finaliste aux mondiaux
+    des vins blancs de Strasbourg. Ces bouteilles devaient se vendre \xE0 prix d\u2019or
+    et ce, avant m\xEAme que la crise onirique ne fasse grimper les prix sur toutes
+    les substances favorisant les sommeils rapides et sans r\xEAves.\r\nLe genre de
+    gars qui peut se permettre de convoquer les d\xE9tectives directement chez lui\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114528656475017176}
+--- !u!114 &114465727126793062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: texte provisoire 6
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: texte provisoire 6
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114832014231691224}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114469082143376388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: revenir au mail
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "La lumi\xE8re crue de l\u2019ordinateur for\xE7a L\xE9onard \xE0 plisser
+    les yeux alors qu\u2019il s\u2019asseyait sur son si\xE8ge grin\xE7ant. Le fond
+    blanc et \xE9tincelant de la page de traitement de texte sur lequel \xE9tait \xE9crit
+    ce nouveau message \xE9tait une v\xE9ritable torture \xE0 regarder si t\xF4t apr\xE8s
+    le r\xE9veil. \r\nIl avait vu juste, une premi\xE8re lecture en diagonale du mail
+    lui suffit pour comprendre qu\u2019il tenait l\xE0 un nouveau client. Reste \xE0
+    savoir s\u2019il allait accepter cette nouvelle mission. Les pr\xE9c\xE9dentes
+    s\u2019\xE9taient dans l\u2019ensemble bien pass\xE9s. Une certaine r\xE9putation
+    le suivait, l\u2019argent suivait aussi non loin derri\xE8re. A 32 ans, L\xE9onard
+    se dit qu\u2019il \xE9tait assez vieux et install\xE9 dans la profession pour
+    pouvoir faire la fine bouche de temps en temps. Pass\xE9 la trentaine, on fait
+    moins de projets, et davantage de caprices."
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114472501450710532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: "Ce qui le surpris le plus, ce fut le mot de d\xE9tective que Denis Carquefou
+    employa pour parler de lui\u2026"
+  Description: "Certes, L\xE9onard parlait toujours de sa profession en employant
+    ce terme \xAB d\xE9tective \xBB \xE7a sonne bien nan ? Pourquoi se g\xEAner ?
+    La v\xE9rit\xE9, c\u2019est que L\xE9onard comme beaucoup de personnes qui exer\xE7aient
+    de nos jours le m\xEAme m\xE9tier aurait \xE9t\xE9 bien en peine de pr\xE9senter
+    une carte de d\xE9tective. \r\n-\tCar je ne suis rien de plus qu\u2019un homme
+    \xE0 tout faire, songea-t-il am\xE8rement. \xAB Homme \xE0 tout faire \xBB. Moins
+    pimpant comme titre. Mais plus fid\xE8le \xE0 la r\xE9alit\xE9. Ceux qui comme
+    lui ont d\xE9cid\xE9 de combler les vides laiss\xE9s par les forces de l\u2019ordre,
+    faute d\u2019effectif et de moyens, sont appel\xE9s les hommes et les femmes \xE0
+    tout faire. \r\n-\tPourtant ce Denis Carquefou l\u2019avait appel\xE9 d\xE9tective,
+    remarqua L\xE9onard\u2026 ce gars l\xE0 devait avoir un certain tact. Ses clients
+    habituels ne prenaient pas autant de gants en s\u2019adressant \xE0 lui."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114483863834819252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "La plupart de ses clients faisait appel \xE0 ses services pour des motifs
+    personnels\u2026 un petit tour sur les r\xE9seaux sociaux, c\u2019est la premi\xE8re
+    \xE9tape \xAB naturelle \xBB pour bien cerner son larron. Lier ce texte au grand
+    texte vert du dessus."
+  m_EditorClassIdentifier: 
+  KeyString: "La plupart de ses clients faisait appel \xE0 ses services pour des motifs
+    personnels\u2026 un petit tour sur les r\xE9seaux sociaux, c\u2019est la premi\xE8re
+    \xE9tape \xAB naturelle \xBB pour bien cerner son larron. Lier ce texte au grand
+    texte vert du dessus."
+  Description: "Plut\xF4t discret le gars\u2026 quelques pages le concernant sur certains
+    grands r\xE9seaux sociaux, ou professionnelles. Mais ces pages se ressemblaient
+    tellement, qu\u2019elles avaient sans doute \xE9t\xE9 produites \xE0 la chaine.
+    Ce Denis Carquefou n\u2019avait sans doute cherch\xE9 qu\u2019\xE0 se donner une
+    visibilit\xE9 au service de ses activit\xE9s professionnelles. \r\nEt en effet,
+    tous cela sentait bon la fa\xE7ade commer\xE7ante\u2026 constata L\xE9onard.\r\nIl
+    y avait des liens vers des pages professionnelles appartenant \xE0 ce Carquefou,
+    des informations basiques et un dernier lien vers son dipl\xF4me de master en
+    droit immobilier et de l\u2019habitat. Le caract\xE8re lisse et aseptis\xE9 de
+    toutes ces pages faillit faire manquer \xE0 L\xE9onard une information intrigante
+    dans la partie \xAB commentaires \xBB d\u2019une de ses pages\u2026\r\nLe commentaire
+    en question datait du 3 septembre, c\u2019\xE9tait il y a 4 jours :\r\n\xAB Courage
+    M.Carquefou, mes pens\xE9es sont pour vous en ces temps difficiles\u2026 \xBB\r\nLe
+    commentaire n\u2019avait pas \xE9t\xE9 \xAB lik\xE9 \xBB par Carquefou. Comme
+    la d\xE9cence voudrait qu\u2019il le soit. Cela signifiait que soit ce dernier
+    \xE9tait particuli\xE8rement insensible, soit qu\u2019il ne se rendait pas tous
+    les jours sur les r\xE9seaux sociaux. \r\n- Probablement la deuxi\xE8me option,
+    admis finalement L\xE9onard.\r\nUn malheur \xE9tait arriv\xE9 r\xE9cemment \xE0
+    ce Denis Carquefou. Un malheur qui justifierait que ce dernier face appel \xE0
+    un d\xE9tective ? Peut-\xEAtre bien\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114528656475017176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: texte provisoire 6
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: texte provisoire 6
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114305776980062766}
+  - {fileID: 114483863834819252}
+  Format: {fileID: 0}
+--- !u!114 &114578983688990686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: texte provisoire 4
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: texte provisoire 4
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114358143619864276}
+  - {fileID: 0}
+  - {fileID: 114848299238770722}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114607046187466808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: le cauchemar du chien
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver d\u2019un chien qui le poursuit"
+  Description: "Le sommeil s\u2019empara rapidement de L\xE9onard. Il avait fait r\xE9cemment
+    l\u2019acquisition d\u2019un sommier neuf et haut de gamme, dans l\u2019espoir
+    que gr\xE2ce \xE0 ce dernier, il ferait moins de cauchemars. Ou qu\u2019au moins,
+    ces derniers seraient plus agr\xE9ables\u2026 Rat\xE9, on n\u2019arr\xEAte pas
+    la crise onirique avec un sommier, f\xFBt-il d\u2019excellente qualit\xE9.\r\nAu
+    moins, il aura essay\xE9\u2026\r\nCette nuit donc, il r\xEAva qu\u2019il courait
+    dans une rue du lotissement de la ville de son enfance. Lui-m\xEAme \xE9tait redevenu
+    un enfant. Il \xE9tait paniqu\xE9. Il \xE9tait poursuivi par le terrible cocker
+    de ses voisins. Bien d\xE9cid\xE9 \xE0 le mordre. Tout le voisinage se rassemblait
+    petit \xE0 petit pour assister \xE0 cette course-poursuite qui n\u2019en finissait
+    pas. Mais au lieu de chercher \xE0 l\u2019aider, les voisins trouvaient plus amusant
+    de se moquer de lui, et de le pointer du doigt.\r\nFinalement, il sentit les dents
+    du canid\xE9 se resserrer puissamment sur son talon gauche. Ce qui eut pour effet
+    de r\xE9veiller un L\xE9onard en sueur. Il transpirait \xE0 tel point qu\u2019on
+    aurait pu croire qu\u2019il avait r\xE9ellement couru."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114125655037699612}
+--- !u!114 &114616067499683788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "caf\xE9-dilemme"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "L\xE9onard prit une douche rapidement, fit sa toilette. Puis il constata
+    qu\u2019il avait tout juste le temps pour un caf\xE9. \u2013 \xE7a passe si je
+    souffle dessus pour le refroidir plus vite, pensa-t-il. \r\nDifficile pour lui
+    de quitter son foyer sans un caf\xE9. Il en buvait tellement et depuis tellement
+    d\u2019ann\xE9es que ses rares jours d\u2019abstinences se changeaient rapidement
+    en atroces jours de migraine. \r\nIl parait que c\u2019est normal pour les caf\xE9inomanes\u2026
+    bon sang la derni\xE8re fois c\u2019\xE9tait pire encore que ces foutus cauchemars.
+    Une image de sa s\u0153ur dans son lit d\u2019\u2019h\xF4pital lui revint aussit\xF4t
+    en m\xE9moire.\r\nNon ce n\u2019\xE9tait pas pire\u2026 quand m\xEAme pas.\r\nL\xE9onard
+    constata qu\u2019il ne lui restait plus qu\u2019un cuiller\xE9e de caf\xE9 lyophilis\xE9
+    au fond de sa boite. De quoi en faire une derni\xE8re fois, puis il faudra en
+    racheter. \r\nLe caf\xE9 \xE9tait devenu hors de prix ces derni\xE8res ann\xE9es.
+    Comme tout ce qui pouvait maintenir \xE9veill\xE9 ne serait-ce qu\u2019un peu
+    plus longtemps. Rester debout quelques minutes de plus signifiait autant de minutes
+    en moins dans son lit, \xE0 cauchemarder, pour au final se r\xE9veiller en sueur
+    et en larmes. Ces pr\xE9cieuses minutes de sursis valaient cher. Environ 8 euros
+    cinquante les 200 grammes. Sale \xE9poque\u2026 et L\xE9onard pr\xE9f\xE9ra ne
+    m\xEAme pas penser aux somnif\xE8res ou autres tranquillisants. C\u2019est chose
+    l\xE0 sont devenus introuvables pour le commun des mortels."
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114680339339106820}
+  - {fileID: 114353638917813634}
+  Format: {fileID: 0}
+--- !u!114 &114623393758983710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "on se met debout (mail + appel manqu\xE9)"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "L\xE9onard n\u2019avait aucune id\xE9e de l\u2019heure qu\u2019il
+    \xE9tait lorsqu\u2019il se d\xE9cida enfin \xE0 sortir du lit. Plus de r\xE9veil
+    depuis qu\u2019il avait cass\xE9 celui-ci il y a deux mois en lui tombant malencontreusement
+    dessus lors d\u2019un \xE9ni\xE8me cauchemar. Les lourds volets en bois \xE9taient
+    totalement rabattus et emp\xEAchait le moindre rayon de soleil de p\xE9n\xE9trer
+    \xE0 l\u2019int\xE9rieur de sa chambre. \r\nDans la pi\xE8ce, il n\u2019y avait
+    que deux sources de lumi\xE8res\u2026 celle de son t\xE9l\xE9phone portable qui
+    indiquait qu\u2019il avait un appel manqu\xE9. Et celle de l\u2019\xE9cran de
+    son ordinateur portable. Celui-ci \xE9tait rest\xE9 en veille sur son bureau.
+    Cependant, L\xE9onard l\u2019avait programm\xE9 pour que chaque mail arrivant
+    sur sa messagerie professionnelle sorte l\u2019\xE9cran de sa torpeur. L\u2019\xE9cran
+    \xE9tait allum\xE9, il indiquait un message encore non ouvert re\xE7u \xE0 13h21...
+    au moins il avait une id\xE9e approximative de l'heure \xE0 pr\xE9sent"
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114153043931025496}
+  - {fileID: 114820822546028216}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114625368406436458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: 
+  Description: 
+  Format: {fileID: 0}
+  NextSituation: {fileID: 0}
+--- !u!114 &114673136497666066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Denis Carquefou\u2026 ce nom lui disait quelque chose."
+  m_EditorClassIdentifier: 
+  KeyString: "Denis Carquefou\u2026 ce nom lui disait quelque chose."
+  Description: "Un ancien client peut-\xEAtre ? Non probablement pas. La crise onirique
+    \xE9tait omnipr\xE9sente depuis quatre ans \xE0 pr\xE9sent. Il avait commenc\xE9
+    le m\xE9tier \xAB d\u2019homme \xE0 tout faire \xBB que depuis trois ans. Son
+    affaire n\u2019avait v\xE9ritablement d\xE9coll\xE9 qu\u2019il y a deux ans environ.
+    Pas assez pour commencer \xE0 oublier le nom de ses tout premiers clients\u2026
+    Pas un client donc\u2026 Il allait falloir faire des recherches."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114680339339106820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Garder le caf\xE9 pour plus tard"
+  m_EditorClassIdentifier: 
+  KeyString: "Garder le caf\xE9 pour plus tard"
+  Description: "Tr\xEAve de r\xEAverie, le caf\xE9 attendra. Il n\u2019en \xE9tait
+    plus \xE0 une migraine pr\xE8s. Mieux valait garder sa derni\xE8re dose pour un
+    moment plus opportun. Une planque dans le cadre d\u2019une enqu\xEAte financ\xE9e
+    par un client d\xE9sesp\xE9r\xE9 mais bon payeur par exemple."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114718756168495304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "chapitre 1 : R\xE9veil"
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Chapitre 1 : l\u2019homme \xE0 tout faire"
+  NextSituation: {fileID: 114279019331104836}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114728520938394998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "une grande curiosit\xE9"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "Quand Internet voulait bien marcher, il donnait r\xE9ponse \xE0 tout.
+    \r\nLa crise onirique avait suffisamment d\xE9sorganis\xE9 la soci\xE9t\xE9 qu\u2019il
+    connaissait pour que cela se ressente m\xEAme dans sa connexion. L\xE9onard n\u2019avait
+    aucune id\xE9e de comment fonctionnait la toile. Sa curiosit\xE9 ne l\u2019avait
+    encore jamais emmen\xE9 sur ce terrain. S\u2019il existe bel et bien un Dieu,
+    qu\u2019il en soit remerci\xE9 pour cela, car le sujet promettait d\u2019\xEAtre
+    chronophage.\r\nQuoi qu\u2019il en soit, Entre l\u2019endroit \xAB o\xF9 l\u2019on
+    fait Internet \xBB et l\u2019ordinateur de L\xE9onard, quelqu\u2019un devait \xEAtre
+    terriblement fatigu\xE9 au point d\u2019en faire mal son boulot. Chez lui comme
+    chez ses voisins, \xE7a d\xE9connait pas mal en ce moment. La crise onirique est
+    partout, ses victimes aussi. Les gens qui font des cauchemars nuit apr\xE8s nuit
+    ne peuvent \xEAtre aussi efficace au boulot. C\u2019\xE9tait h\xE9las vrai pour
+    lui. Et visiblement encore plus pour les mecs charg\xE9s de faire fonctionner
+    la toile. \r\nAujourd\u2019hui, la connexion \xE9tait lente, les pages se chargeaient
+    p\xE9niblement les unes apr\xE8s les autres. Une personne \xE0 la curiosit\xE9
+    moins d\xE9vorante aurait peut-\xEAtre m\xEAme l\xE2ch\xE9 l\u2019affaire. \r\nMais
+    pour L\xE9onard, la patience est une vertu qui s\u2019acqui\xE8re\u2026 avec de
+    la patience."
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114443221340777978}
+  - {fileID: 114226831970059698}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114753737812155892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "le cauchemar de l'\xE9cole"
+  m_EditorClassIdentifier: 
+  KeyString: "Cette nuit, L\xE9onard va r\xEAver qu\u2019il arrive au coll\xE8ge en
+    pyjama"
+  Description: "Cette nuit donc il r\xEAva qu\u2019il venait d\u2019arriver au coll\xE8ge
+    qu\u2019il avait fr\xE9quent\xE9 pendant quatre horribles ann\xE9es. Devant la
+    salle de classe o\xF9 aurait lieu le premier cours de la journ\xE9e, l\u2019attendaient
+    ses deux camarades de l\u2019\xE9poque : Samuel et Bastien. \r\n-\tPas mal ton
+    nouveau style !! Si avec \xE7a H\xE9l\xE8ne ne te tombe pas imm\xE9diatement dans
+    les bras\u2026\r\nLa fin de la phrase se perdit dans de gigantesques \xE9clats
+    de rire. H\xE9b\xE9t\xE9, L\xE9onard baissa les yeux sur ses v\xEAtements et vit
+    qu\u2019il \xE9tait encore en pyjama. Celui-ci \xE9tait rose qui plus est\u2026
+    (Hein ?? L\xE9onard n\u2019avait jamais port\xE9 de pyjama rose). Quoi qu\u2019il
+    en soit, c\u2019\xE9tait la honte. Et c\u2019\xE9tait aussi visiblement ce que
+    pensait la jeune H\xE9l\xE8ne quand cette derni\xE8re posa son regard sur lui.
+    Avec ses copines, elles se mirent \xE0 ricaner dans leur coin.\r\nLorsque L\xE9onard
+    se r\xE9veilla en sursaut et en sueur, une question se figea aussit\xF4t dans
+    son esprit : pourquoi \xE0 l\u2019\xE9poque j\u2019\xE9tais amis avec ces deux
+    cons d\xE9j\xE0 ? Maigre r\xE9confort, H\xE9l\xE8ne avec le temps avait davantage
+    pris en largeur qu\u2019en hauteur\u2026 elle s\u2019\xE9tait mari\xE9e avec un
+    type qui avait mis moins d\u2019un an pour se d\xE9cider \xE0 la tromper. Il le
+    sait, elle l\u2019avait fait appel \xE0 ses services pour surveiller son mari.\r\n-\tBien
+    fait pour ta gueule, pauvre conne, pensa-t-il. T\u2019avais pas qu\u2019\xE0 te
+    marrer de mon pyjama rose\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114125655037699612}
+--- !u!114 &114783467908284238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: "L\xE9onard appr\xE9cie le mail"
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: "Sobre. Parfait, L\xE9onard savait appr\xE9cier la sobri\xE9t\xE9.
+    \r\nIl relut le mail une deuxi\xE8me fois. Puis une troisi\xE8me\u2026"
+  NextSituation: {fileID: 0}
+  Choices:
+  - {fileID: 114472501450710532}
+  - {fileID: 114980285766518262}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114784565579994604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: le mail de monsieur Denis carquefou
+  m_EditorClassIdentifier: 
+  Type: 0
+  Description: "Je m\u2019appelle Denis Carquefou, j\u2019ai entendu parler de vous.
+    Des contacts m\u2019ont dit que vous \xE9tiez un d\xE9tective comp\xE9tent, une
+    v\xE9ritable valeur montante dans votre domaine, et qu\u2019en plus vous ne preniez
+    pas encore trop cher. \r\nJ\u2019esp\xE8re que mes contacts avaient raison sur
+    toute la ligne.\r\nSi oui, rendez-vous directement \xE0 mon domicile, j\u2019habite
+    pr\xE8s de Rennes. 14 rue Mathurin Meheut. Venez aujourd\u2019hui. Je n\u2019ai
+    pas d\u2019heures pr\xE9cise \xE0 vous donner. \r\nInutile de r\xE9pondre \xE0
+    ce mail par de nouvelles questions, j\u2019ai dit ce que j\u2019avais \xE0 dire.
+    Pour toute r\xE9ponse, un oui ou un non me suffira.\r\nCordialement\r\nM. Carquefou
+    Denis"
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114813548078234668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e986b02e5fb71fd488f4ff753db25775, type: 3}
+  m_Name: texte provisoire 5
+  m_EditorClassIdentifier: 
+  Type: 1
+  Description: texte provisoire 5
+  NextSituation: {fileID: 0}
+  Choices: []
+  Format: {fileID: 0}
+--- !u!114 &114820822546028216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Bon, voyons voir ce fameux mail\u2026"
+  m_EditorClassIdentifier: 
+  KeyString: "Bon, voyons voir ce fameux mail\u2026"
+  Description: "La lumi\xE8re crue de l\u2019ordinateur for\xE7a L\xE9onard \xE0 plisser
+    les yeux alors qu\u2019il s\u2019asseyait sur son si\xE8ge grin\xE7ant. Le fond
+    blanc et \xE9tincelant de la page de traitement de texte sur lequel \xE9tait \xE9crit
+    ce nouveau message \xE9tait une v\xE9ritable torture \xE0 regarder si t\xF4t apr\xE8s
+    le r\xE9veil. \r\nIl avait vu juste, une premi\xE8re lecture en diagonale du mail
+    lui suffit pour comprendre qu\u2019il tenait l\xE0 un nouveau client. Reste \xE0
+    savoir s\u2019il allait accepter cette nouvelle mission. Les pr\xE9c\xE9dentes
+    s\u2019\xE9taient dans l\u2019ensemble bien pass\xE9s. Une certaine r\xE9putation
+    le suivait, l\u2019argent suivait aussi non loin derri\xE8re. A 32 ans, L\xE9onard
+    se dit qu\u2019il \xE9tait assez vieux et install\xE9 dans la profession pour
+    pouvoir faire la fine bouche de temps en temps. Pass\xE9 la trentaine, on fait
+    moins de projets, et davantage de caprices."
+  Format: {fileID: 0}
+  NextSituation: {fileID: 0}
+--- !u!114 &114832014231691224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: 
+  Description: "La plupart de ses clients faisait appel \xE0 ses services pour des
+    motifs personnels\u2026 un petit tour sur les r\xE9seaux sociaux, c\u2019est la
+    premi\xE8re \xE9tape \xAB naturelle \xBB pour bien cerner son larron.\r\n"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114848299238770722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: "Minute papillon\u2026    cette option ne s\u2019ouvre pas si le joueur
+    \xE0 d\xE9j\xE0 check\xE9 la vie professionnelle de Carquefou"
+  m_EditorClassIdentifier: 
+  KeyString: "Minute papillon\u2026    cette option ne s\u2019ouvre pas si le joueur
+    \xE0 d\xE9j\xE0 check\xE9 la vie professionnelle de Carquefou"
+  Description: "Il ne suffit \xE0 L\xE9onard qu\u2019une dizaine de minutes pour se
+    faire \xAB une opinion solide mais appel\xE9 \xE0 s\u2019affiner avec le temps
+    \xBB sur ce Denis Carquefou. \r\n- Prometteur\u2026 \r\nComme le disait la chanson,
+    Denis Carquefou \xE9tait riche, tr\xE8s riche, il est dans l\u2019immobilier.
+    Propri\xE9taire terrien. Plus impressionnant encore, la majeure partie de sa fortune
+    ne semblait pas provenir d\u2019un quelconque h\xE9ritage. Cet homme s\u2019\xE9tait
+    fait tout seul\u2026pas mal du tout. Surtout pour un gars de 37 ans. \r\nCerise
+    sur le g\xE2teau, il semblerait qu\u2019il n\u2019ait que peu profiter des opportunit\xE9s
+    de la crise onirique pour s\u2019enrichir. Aucun dossier judiciaire. Aucun d\xE9m\xEAl\xE9
+    avec la justice le concernant n\u2019a filtr\xE9 dans la presse. Ou bien ce gars
+    est particuli\xE8rement discret, ou bien il est juste talentueux. \r\nSes propri\xE9t\xE9s
+    vont de maisons de campagne en Bretagne, en Normandie et en Mayenne. Jusqu\u2019\xE0
+    des terres agricoles et viticoles en Bourgogne. Put***, il est m\xEAme propri\xE9taire
+    des champs M\xE9dicourt dont le vin a remport\xE9 il y a deux ans le mondial D\xE9vinot.
+    L\u2019ann\xE9e derni\xE8re, ce m\xEAme vin a termin\xE9 finaliste aux mondiaux
+    des vins blancs de Strasbourg. Ces bouteilles devaient se vendre \xE0 prix d\u2019or
+    et ce, avant m\xEAme que la crise onirique ne fasse grimper les prix sur toutes
+    les substances favorisant les sommeils rapides et sans r\xEAves.\r\nLe genre de
+    gars qui peut se permettre de convoquer les d\xE9tectives directement chez lui\u2026"
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114895550250729022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: Approfondir les recherches.
+  m_EditorClassIdentifier: 
+  KeyString: Approfondir les recherches.
+  Description: "L\xE9onard sentit la curiosit\xE9 monter en lui. Beaucoup de gens
+    pensent que c\u2019est une curiosit\xE9 naturelle et exag\xE9r\xE9ment prononc\xE9e
+    qui pousse certain \xE0 devenir d\xE9tective. \r\nLes gens ont raison. Globalement.\r\nCe
+    qu\u2019ils ignorent, c\u2019est qu\u2019une fois d\xE9tective, la curiosit\xE9
+    se fait alors instinct, r\xE9flexe, seconde nature. Loin de l\u2019apaiser, la
+    profession ne fait que l\u2019attiser toujours plus. La curiosit\xE9 n\u2019est
+    pas le meilleur atout de tout bon d\xE9tective, elle en est la mal\xE9diction.
+    Elle le ronge de l\u2019int\xE9rieur. Si une h\xE9sitation s\u2019installe, ne
+    serait-ce qu\u2019une seconde, c\u2019est fini. La curiosit\xE9 prend imm\xE9diatement
+    une place grandissante dans l\u2019esprit de son organisme h\xF4te. Elle en devient
+    une excroissance. Elle empi\xE8te inexorablement sur tout le reste. Un jour la
+    curiosit\xE9 tuera L\xE9onard. C\u2019\xE9tait l\u2019\xE9vidence m\xEAme.\r\nLa
+    curiosit\xE9, c\u2019est avant tout la volont\xE9 de trouver une r\xE9ponse convaincante
+    \xE0 la moindre parcelle de doute.  La curiosit\xE9, c\u2019est \xEAtre intol\xE9rant
+    \xE0 l\u2019ignorance.\r\nEt le nom de Denis Carquefou avait \xE9veill\xE9 un
+    doute en lui. Rien \xE0 faire\u2026 il allait devoir faire quelques recherches
+    sur cet homme. Il n\u2019arriverait pas chez ce dernier sans rien n\u2019avoir
+    appris \xE0 son propos."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114980285766518262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: "Denis Carquefou\u2026 ce nom lui disait vaguement quelque chose."
+  Description: "Un ancien client peut-\xEAtre ? Non probablement pas. La crise onirique
+    \xE9tait omnipr\xE9sente depuis quatre ans \xE0 pr\xE9sent. Il avait commenc\xE9
+    le m\xE9tier \xAB d\u2019homme \xE0 tout faire \xBB que depuis trois ans. Son
+    affaire n\u2019avait v\xE9ritablement d\xE9coll\xE9 qu\u2019il y a deux ans environ.
+    Pas assez pour commencer \xE0 oublier le nom de ses tout premiers clients\u2026
+    Pas un client donc\u2026 Il allait falloir faire des recherches."
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114149634254593318}
