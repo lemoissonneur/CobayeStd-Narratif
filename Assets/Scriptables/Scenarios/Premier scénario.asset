@@ -148,11 +148,12 @@ MonoBehaviour:
   m_Name: "Ce Denis Carquefou s\u2019adressait \xE0 lui en employant le terme de d\xE9tective\u2026
     \xE9trange \xE7a\u2026"
   m_EditorClassIdentifier: 
-  Type: 0
+  Type: 1
   Description: "Ce Denis Carquefou s\u2019adressait \xE0 lui en employant le terme
     de d\xE9tective\u2026 \xE9trange \xE7a\u2026"
   NextSituation: {fileID: 0}
-  Choices: []
+  Choices:
+  - {fileID: 114980285766518262}
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114149634254593318
 MonoBehaviour:
@@ -167,10 +168,12 @@ MonoBehaviour:
   m_Name: "r\xE9ponse provisoire 1"
   m_EditorClassIdentifier: 
   Type: 1
-  Description: "r\xE9ponse provisoire 1"
+  Description: "r\xE9ponse provisoire 1\n\nIci, il faut cr\xE9er un lien \"ce Denis
+    Carquefou s'adresse.... qui renvoie \xE0 \"certes L\xE9onard..."
   NextSituation: {fileID: 0}
   Choices:
   - {fileID: 114895550250729022}
+  - {fileID: 114713231037963904}
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114153043931025496
 MonoBehaviour:
@@ -207,16 +210,16 @@ MonoBehaviour:
     ne se fasse entendre.\r\nUne voix masculine se fit entendre. La voix \xE9tait
     calme, s\xE9rieuse quoiqu\u2019un l\xE9ger enthousiasme restait perceptible. On
     notait \xE9galement un petit rien de sensualit\xE9 dans cette derni\xE8re.\r\nCe
-    r\xE9pondeur avait \xE9t\xE9 visiblement travaill\xE9. Et le gars en question
-    devait bosser dans la communication ou la vente, estima L\xE9onard.\r\n\xAB Bonjour,
-    vous \xEAtes bien sur le t\xE9l\xE9phone portable priv\xE9 de Denis Carquefou.
+    message de r\xE9pondeur avait \xE9t\xE9 visiblement travaill\xE9. Et le gars en
+    question devait bosser dans la communication ou la vente, estima L\xE9onard.\r\n\xAB
+    Bonjour, vous \xEAtes bien sur le t\xE9l\xE9phone portable priv\xE9 de Denis Carquefou.
     Je ne suis h\xE9las pas disponible pour le moment. Mais vous pouvez laisser un
     message apr\xE8s le bip sonore et je vous rappellerai le plus rapidement possible.\r\nBonne
     journ\xE9e \xE0 vous \xBB.\r\n\u2026 d\xE9finitivement un commercial, trancha
     int\xE9rieurement L\xE9onard.\r\nMais un commercial qu\u2019il l\u2019avait contact\xE9
     avec son t\xE9l\xE9phone portable personnelle. Int\xE9ressant \xE7a. Le gars faisait
     gratuitement des heures sup\u2019 chez lui ou bien\u2026"
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114469082143376388}
   Choices: []
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114226831970059698
@@ -340,8 +343,8 @@ MonoBehaviour:
     fils ? Les recherches avaient \xE9t\xE9 plus longues que pr\xE9vu. S\u2019il voulait
     arriver \xE0 une heure convenable chez son futur client, il valait mieux se pr\xE9parer
     d\xE8s maintenant. Et partir s\u2019en tarder\u2026"
-  Format: {fileID: 0}
-  NextSituation: {fileID: 0}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114616067499683788}
 --- !u!114 &114342584018426562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,9 +407,11 @@ MonoBehaviour:
     de monsieur tout-le-monde, c\u2019est-\xE0-dire avant 17h30, cela signifiait que
     le temps de faire sa toilette et de prendre une douche, il devait laisser ses
     recherches pour le moment. Il \xE9tait temps pour lui de partir. Sa curiosit\xE9
-    reviendrait le hanter plus tard. Elle revient toujours."
+    reviendrait le hanter plus tard. Elle revient toujours.\n\n\n\n\n\n\n\nCommentaires:
+    ici il faudra ajouter un lien ramenant \xE0 la vie personnelle de Denis Carquefou.
+    (voir mind meister)."
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114616067499683788}
 --- !u!114 &114390246245123068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,13 +450,28 @@ MonoBehaviour:
   Type: 0
   Description: "La v\xE9ritable crise est bien pr\xE9sente d\xE9sormais\u2026 et finalement,
     elle n\u2019aura \xE9t\xE9 ni \xE9conomique, ni sociale, ni \xE9cologique et encore
-    moins bact\xE9riologique. Il s\u2019agit d\u2019une crise onirique. C\u2019est
-    en tous cas le nom que les m\xE9dias lui ont donn\xE9. Depuis quatre ans \xE0
-    pr\xE9sent, c\u2019est l\u2019ensemble de l\u2019humanit\xE9 qui parle de crise
-    onirique."
+    moins sanitaire. Il s\u2019agit d\u2019une crise onirique. C\u2019est en tous
+    cas le nom que les m\xE9dias lui ont donn\xE9. Depuis quatre ans \xE0 pr\xE9sent,
+    c\u2019est l\u2019ensemble de l\u2019humanit\xE9 qui parle de crise onirique."
   NextSituation: {fileID: 114718756168495304}
   Choices: []
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+--- !u!114 &114426490088796004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: 
+  Description: 
+  Format: {fileID: 0}
+  NextSituation: {fileID: 0}
 --- !u!114 &114443221340777978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +550,7 @@ MonoBehaviour:
     se dit qu\u2019il \xE9tait assez vieux et install\xE9 dans la profession pour
     pouvoir faire la fine bouche de temps en temps. Pass\xE9 la trentaine, on fait
     moins de projets, et davantage de caprices."
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114784565579994604}
   Choices: []
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114472501450710532
@@ -543,7 +563,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
-  m_Name: New Choice
+  m_Name: "Ce qui le surpris le plus, ce fut le mot de d\xE9tective que Denis Carquefou
+    employa pour parler de lui\u2026"
   m_EditorClassIdentifier: 
   KeyString: "Ce qui le surpris le plus, ce fut le mot de d\xE9tective que Denis Carquefou
     employa pour parler de lui\u2026"
@@ -560,7 +581,7 @@ MonoBehaviour:
     remarqua L\xE9onard\u2026 ce gars l\xE0 devait avoir un certain tact. Ses clients
     habituels ne prenaient pas autant de gants en s\u2019adressant \xE0 lui."
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114290195667505936}
 --- !u!114 &114483863834819252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +728,7 @@ MonoBehaviour:
   Choices:
   - {fileID: 114680339339106820}
   - {fileID: 114353638917813634}
-  Format: {fileID: 0}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114623393758983710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,12 +791,12 @@ MonoBehaviour:
   KeyString: "Denis Carquefou\u2026 ce nom lui disait quelque chose."
   Description: "Un ancien client peut-\xEAtre ? Non probablement pas. La crise onirique
     \xE9tait omnipr\xE9sente depuis quatre ans \xE0 pr\xE9sent. Il avait commenc\xE9
-    le m\xE9tier \xAB d\u2019homme \xE0 tout faire \xBB que depuis trois ans. Son
-    affaire n\u2019avait v\xE9ritablement d\xE9coll\xE9 qu\u2019il y a deux ans environ.
-    Pas assez pour commencer \xE0 oublier le nom de ses tout premiers clients\u2026
+    le m\xE9tier \xAB d\u2019homme \xE0 tout faire \xBB depuis seulement trois ans.
+    Son affaire n\u2019avait v\xE9ritablement d\xE9coll\xE9 qu\u2019il y a deux ans
+    environ. Pas assez pour commencer \xE0 oublier le nom de ses tout premiers clients\u2026
     Pas un client donc\u2026 Il allait falloir faire des recherches."
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114142692949619060}
 --- !u!114 &114680339339106820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +815,22 @@ MonoBehaviour:
     moment plus opportun. Une planque dans le cadre d\u2019une enqu\xEAte financ\xE9e
     par un client d\xE9sesp\xE9r\xE9 mais bon payeur par exemple."
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 0}
+--- !u!114 &114713231037963904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0d158e52ff26d4baa1f02b020abef6, type: 3}
+  m_Name: New Choice
+  m_EditorClassIdentifier: 
+  KeyString: 
+  Description: 
+  Format: {fileID: 0}
   NextSituation: {fileID: 0}
 --- !u!114 &114718756168495304
 MonoBehaviour:
@@ -902,7 +939,7 @@ MonoBehaviour:
   NextSituation: {fileID: 0}
   Choices:
   - {fileID: 114472501450710532}
-  - {fileID: 114980285766518262}
+  - {fileID: 114673136497666066}
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114784565579994604
 MonoBehaviour:
@@ -927,7 +964,7 @@ MonoBehaviour:
     ce mail par de nouvelles questions, j\u2019ai dit ce que j\u2019avais \xE0 dire.
     Pour toute r\xE9ponse, un oui ou un non me suffira.\r\nCordialement\r\nM. Carquefou
     Denis"
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114783467908284238}
   Choices: []
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
 --- !u!114 &114813548078234668
@@ -972,8 +1009,8 @@ MonoBehaviour:
     se dit qu\u2019il \xE9tait assez vieux et install\xE9 dans la profession pour
     pouvoir faire la fine bouche de temps en temps. Pass\xE9 la trentaine, on fait
     moins de projets, et davantage de caprices."
-  Format: {fileID: 0}
-  NextSituation: {fileID: 0}
+  Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
+  NextSituation: {fileID: 114784565579994604}
 --- !u!114 &114832014231691224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,7 +1097,7 @@ MonoBehaviour:
     sur cet homme. Il n\u2019arriverait pas chez ce dernier sans rien n\u2019avoir
     appris \xE0 son propos."
   Format: {fileID: 11400000, guid: 593c449e67de7434da72718480b03099, type: 2}
-  NextSituation: {fileID: 0}
+  NextSituation: {fileID: 114728520938394998}
 --- !u!114 &114980285766518262
 MonoBehaviour:
   m_ObjectHideFlags: 0
