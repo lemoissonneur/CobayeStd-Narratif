@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Cobaye.ScenarioSystem;
 
 public class GameManager : MonoBehaviour
 {
