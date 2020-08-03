@@ -502,9 +502,9 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: dUI_MANAGER;dUI_TextMeshPro
-    4: dUI_MANAGER;dUI_TextMeshPro
-    7: dUI_MANAGER;dUI_TextMeshPro
+    1: dUI_MANAGER;dUI_TextMeshPro;TMP_PRESENT;USE_TWINE;USE_PHYSICS2D
+    4: dUI_MANAGER;dUI_TextMeshPro;TMP_PRESENT;USE_TWINE;USE_PHYSICS2D
+    7: dUI_MANAGER;dUI_TextMeshPro;TMP_PRESENT;USE_TWINE;USE_PHYSICS2D
     13: dUI_MANAGER;dUI_TextMeshPro
     14: dUI_MANAGER;dUI_TextMeshPro
     19: dUI_MANAGER;dUI_TextMeshPro
